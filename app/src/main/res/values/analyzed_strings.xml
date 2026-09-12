@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="analyzed_title_hindi">NASA POWER विश्लेषित मौसम डेटा</string>
+    <string name="analyzed_title_english">NASA POWER Data — Analyzed</string>
+    <string name="analyzed_summary_label">Weekly analysis summary</string>
+    <string name="analyzed_summary_placeholder">Analyzing Mon–Fri weekly weather…</string>
+    <string name="analyzed_download_btn">Download Analyzed CSV</string>
+    <string name="analyzed_continue">Continue to Calculate</string>
+    <string name="analyzed_csv_download_success">Analyzed CSV downloaded to %1$s</string>
+    <string name="analyzed_error">Analysis failed: %1$s</string>
+    <string name="analyzed_not_ready">Analysis is not ready yet.</string>
+</resources>

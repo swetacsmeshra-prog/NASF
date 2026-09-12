@@ -1,0 +1,5 @@
+script_name,purpose,input,output,nasa_parameters,cache_dir,command
+merge_rice_nasapower_long.py,Build long-format 52-week merged CSV,RICE_UP_BI_PU_HR_USED_FINAL.xlsx + nasapower 30 yrs.xlsx,exports/rice_nasapower_weekly_merged.csv,"PRECTOTCORR,RH2M,ALLSKY_SFC_SW_DWN,T2M_MIN,T2M_MAX,WS10M",exports/nasa_cache/yearly,python3 merge_rice_nasapower_long.py
+add_wind_speed.py,Add weekly wind speed to merged CSV,exports/rice_nasapower_weekly_merged.csv,exports/rice_nasapower_weekly_merged.csv (adds wind_speed_weekly_mean_ms),WS10M,exports/nasa_cache/wind,python3 add_wind_speed.py
+segregate_weekly_columns.py,Pivot to wide segregated Excel/CSV,exports/rice_nasapower_weekly_merged.csv,"exports/rice_nasapower_weekly_segregated.xlsx, exports/rice_nasapower_weekly_segregated.csv",N/A (reads merged CSV),N/A,python3 segregate_weekly_columns.py
+build_rework_52week_excel.py,Build 52-week Excel from rework.xlsx,rework.xlsx + nasapower 30 yrs.xlsx,exports/rework_52week_calendar.xlsx,"PRECTOTCORR,RH2M,ALLSKY_SFC_SW_DWN,T2M_MIN,T2M_MAX",exports/nasa_cache/yearly,python3 build_rework_52week_excel.py

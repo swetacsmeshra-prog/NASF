@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logo_1"
+    tools:context=".ManualDetails">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                tools:ignore="SpUsage"
+                android:layout_span="2"
+                android:textColor="@color/light_brown">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icar"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/logo_size1"
+                android:layout_weight="1"
+                android:src="@drawable/icar_logo"
+                android:contentDescription="@string/icar_logo">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/logo_size1"
+                android:layout_weight="1"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/iari_logo">
+            </ImageView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/Login1"
+                android:textSize="@dimen/empty_text1"
+                android:layout_span="2"
+                tools:ignore="SpUsage"
+                android:textColor="@color/dark_blue">
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_blue">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_dashboard_location"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/location_values_hindi"
+                    android:textSize="@dimen/login_text1"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/white">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_blue">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_dashboard_location1"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/location_values_english"
+                    android:textSize="@dimen/login_text1"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/white">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dropdown_menu_state"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="राज्य चुनें / Select State">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextViewState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Long"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="देशान्तर मान / Longitude Value"
+                        tools:ignore="SpUsage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Lat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:layout_span="2"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="अक्षांश मान / Latitude Value"
+                        tools:ignore="SpUsage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/climatologyHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:ignore="SpUsage" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_blue">
+                <TextView
+                    android:id="@+id/text_dashboard_soil"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/soil_values_hindi"
+                    android:textSize="@dimen/login_text1"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/white">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_blue">
+                <TextView
+                    android:id="@+id/text_dashboard_soil1"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/soil_values_english"
+                    android:textSize="@dimen/login_text1"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/white">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="pH मान / pH Value"
+                        tools:ignore="SpUsage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EC_dS_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="इलेक्ट्रिकल कंडक्टीविटी(ds/m)/Electric Conductivity(ds/m)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/OC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="जैविक कार्बन (%) / Organic Carbon (%)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Avail_N_Kg_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="पप्रमुख पोषक तत्व N (kg/ha)/Major Nutrient N (kg/ha)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Avail_P_kg_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="प्रमुख पोषक तत्व P (kg/ha)/Major Nutrient P (kg/ha)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Avail_K_kg_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="प्रमुख पोषक तत्व K (kg/ha)/Major Nutrient K (kg/ha)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Soil_S_kg_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="सल्फर (ppm)/ Sulphur (ppm)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Soil_Zn_ppm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="सूक्ष्म पोषक तत्व Zn (ppm)/ Micro Nutrient Zn (ppm)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Soil_Fe_ppm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="सूक्ष्म पोषक तत्व Fe (ppm)/Micro Nutrient Fe (ppm)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Soil_Mn_ppm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="सूक्ष्म पोषक तत्व Mn (ppm)/Micro Nutrient Mn (ppm)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Soil_Cu_ppm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="सूक्ष्म पोषक तत्व Cu (पीपीएम)/Micro Nutrient Cu (ppm)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_blue">
+
+                <TextView
+                    android:id="@+id/text_dashboard_management"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/management_values_hindi"
+                    android:textSize="@dimen/login_text1"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/white">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_blue">
+
+                <TextView
+                    android:id="@+id/text_dashboard_management1"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/management_values_english"
+                    android:textSize="@dimen/login_text1"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/white">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dropdown_menu_crop"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="फसल का चयन / Select Crop">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextViewCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dropdown_menu_variety"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="किस्म चुनें / Select Variety"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:visibility="gone">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextViewVariety"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Residue_Incor_Q_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="अवशेष निगमन (q/ha)/Residue Incorporation (q/ha)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Appl_N_kg_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="यूरिया डाला (kg/ha)/Urea Applied (kg/ha)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Appl_P2O5_kg_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="डायमोनियम फॉस्फेट / DAP (kg/ha)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Appl_K2O_kg_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="म्यूरेट ऑफ पोटाश (kg/ha) / MOP (kg/ha)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Zinc_Sul_kg_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="जिंक सल्फर मूल्य (kg/ha)/ Zinc Sulphate (kg/ha)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/FYM_t_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="एफ वाई एम (खाद) (t/ha)/Farmyard manure (t/ha)"
+                        tools:ignore="SpUsage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/FYM_input_interval_Yr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="एफ वाई एम अनुप्रयोग अंतराल (Yr)/FYM Application Interval (Yr)"
+                        tools:ignore="SpUsage" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Sowing_DOY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:focusable="false"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="फसल बुआई की तारीख/Select Crop Sowing Date"
+                        tools:ignore="SpUsage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Irr_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="सिंचाई (1) / Irrigated (1)"
+                        tools:ignore="SpUsage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:layout_span="2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Grain_Yield_Q_ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/black"
+                        android:layout_weight="1.0"
+                        android:textSize="@dimen/managementvalues"
+                        android:hint="फार्म आईडी / Farm ID"
+                        tools:ignore="SpUsage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progressbarManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true">
+
+                </ProgressBar>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/include_weather_source_toggle" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/calculatebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="@string/calculate_yield"
+                    android:textSize="@dimen/login_text1"
+                    tools:ignore="SpUsage">
+                </Button>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

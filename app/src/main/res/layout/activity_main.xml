@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/logo_1"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icar"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/logo_size1"
+                    android:layout_weight="1"
+                    android:src="@drawable/icar_logo"
+                    android:contentDescription="@string/icar_logo">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/logo1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/logo_size1"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo"
+                    android:contentDescription="@string/iari_logo">
+                </ImageView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/Login1"
+                    android:textSize="@dimen/empty_text1"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/dark_blue">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_dashboard"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/dashboard_english"
+                    android:textSize="@dimen/login_text1"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/dark_blue">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_management"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/dashboard_hindi"
+                    android:textSize="@dimen/login_text1"
+                    tools:ignore="SpUsage"
+                    android:layout_span="2"
+                    android:textColor="@color/dark_blue">
+
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/manual_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_span="2"
+                    android:text="@string/dashboard_manual"
+                    android:textSize="@dimen/login_text1"
+                    tools:ignore="SpUsage">
+
+                </Button>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/automatic_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_span="2"
+                    android:text="@string/dashboard_automatic"
+                    android:textSize="@dimen/login_text1"
+                    tools:ignore="SpUsage">
+                </Button>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/system_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_span="2"
+                    android:text="@string/dashboard_management"
+                    android:textSize="25dp"
+                    tools:ignore="SpUsage">
+                </Button>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/thirty_year_climate_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_span="2"
+                    android:text="@string/analyzed_view_30_year_report_btn"
+                    android:textSize="@dimen/login_text1"
+                    tools:ignore="SpUsage">
+                </Button>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

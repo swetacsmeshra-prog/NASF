@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="thirty_year_title">30-Year June–October Climate History</string>
+    <string name="thirty_year_title_hindi">30-वर्ष जून–अक्टूबर जलवायु इतिहास</string>
+    <string name="thirty_year_loading">Building 30-year June–October report…</string>
+    <string name="thirty_year_error">Report failed: %1$s</string>
+    <string name="thirty_year_summary">Farm: %1$.4f°N, %2$.4f°E · Years %3$d–%4$d · June–October monthly data</string>
+    <string name="thirty_year_select_year">Select year</string>
+    <string name="thirty_year_data_source_csv">Charts: segregated CSV reference (%1$d farms, weeks 23–44)</string>
+    <string name="thirty_year_data_source_nasa">Charts: NASA POWER monthly (no CSV rows for %1$d)</string>
+    <string name="thirty_year_year_detail_title">%1$d Crop Season (weeks 23–44)</string>
+    <string name="thirty_year_chart_rainfall">Weekly Rainfall (mm)</string>
+    <string name="thirty_year_chart_temperature">Weekly Temperature (°C)</string>
+    <string name="thirty_year_chart_humidity">Weekly Humidity (%)</string>
+    <string name="thirty_year_chart_solar">Weekly Solar (kWh/m²/day)</string>
+    <string name="thirty_year_chart_wind">Weekly Wind (m/s)</string>
+    <string name="thirty_year_csv_years_note">Reference CSV years: %1$s</string>
+    <string name="thirty_year_chart_historical_rain">30-Year June–October Season Rainfall</string>
+    <string name="thirty_year_chart_historical_temp">30-Year June–October Mean Temperature</string>
+    <string name="thirty_year_chart_year_rain">%1$d Monthly Rainfall (Jun–Oct)</string>
+    <string name="thirty_year_chart_yield_trend">Random Forest Algorithm — 30-Year Yield Trend</string>
+    <string name="thirty_year_rf_title">Random Forest Algorithm — Predicted Yield (%1$d)</string>
+    <string name="thirty_year_cubic_title">Cubic Model Algorithm — Rainfall vs Yield (%1$d)</string>
+    <string name="thirty_year_rf_value">%1$.2f t/ha</string>
+    <string name="thirty_year_season_rain">Season rainfall (Jun–Oct %1$d): %2$.1f mm</string>
+    <string name="thirty_year_desc_monthly">Data: NASA POWER monthly, June–October per year</string>
+    <string name="thirty_year_desc_rf_trend">Algorithm: Random Forest (per year)</string>
+    <string name="thirty_year_download_csv">Download 30-Year Jun–Oct CSV</string>
+    <string name="thirty_year_csv_success">30-year CSV saved to %1$s</string>
+    <string name="thirty_year_continue">Continue to Calculate</string>
+    <string name="thirty_year_monthly_note">Monthly aggregates (coarser than weekly segregated CSV). Full 52-week export remains on Crop Season report.</string>
+    <string name="weather_view_30_year_report_btn">View 30-Year June–October Report</string>
+    <string name="analyzed_view_30_year_report_btn">View 30-Year Climate Report</string>
+    <string name="dashboard_thirty_year_prompt">Enter farm Latitude and Longitude to load the 30-year June–October climate report.</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="analytics_title">June–October Crop Season Analytics</string>
+    <string name="analytics_title_hindi">जून–अक्टूबर फसल मौसम विश्लेषण</string>
+    <string name="analytics_loading">Building June–October crop season report…</string>
+    <string name="analytics_error">Report failed: %1$s</string>
+    <string name="analytics_farm_summary">Farm: %1$.4f°N, %2$.4f°E · Year %3$d · %4$s</string>
+    <string name="analytics_crop_weeks_count">%1$d crop-season weeks analyzed (June–October)</string>
+    <string name="analytics_rf_title">Random Forest Algorithm — Predicted Yield</string>
+    <string name="analytics_rf_chart_title">Random Forest Algorithm — Top Yield Drivers (Jun–Oct)</string>
+    <string name="analytics_cubic_title">Cubic Model Algorithm — Rainfall vs Yield</string>
+    <string name="analytics_cubic_chart_title">Cubic Model Algorithm — Seasonal Rainfall vs Yield (Jun–Oct)</string>
+    <string name="analytics_rf_value">%1$.2f t/ha</string>
+    <string name="analytics_season_rain">Season rainfall (Jun–Oct): %1$.1f mm</string>
+    <string name="analytics_chart_rainfall">June–October Weekly Rainfall</string>
+    <string name="analytics_chart_temperature">June–October Temperature (Min / Max)</string>
+    <string name="analytics_chart_humidity">June–October Relative Humidity</string>
+    <string name="analytics_chart_solar">June–October Solar Radiation</string>
+    <string name="analytics_chart_wind">June–October Wind Speed</string>
+    <string name="analytics_chart_importance">Random Forest Algorithm — Top Yield Drivers (Jun–Oct)</string>
+    <string name="analytics_desc_crop_season">Data: crop season weeks 23–44</string>
+    <string name="analytics_desc_random_forest">Algorithm: Random Forest</string>
+    <string name="analytics_desc_cubic">Algorithm: Cubic Polynomial (degree 3)</string>
+    <string name="analytics_continue">Continue to Calculate</string>
+    <string name="analytics_crop_season_note">Charts show rice crop season only (June sowing – October harvest)</string>
+    <string name="analytics_segregated_title">Segregated CSV Data (52 weeks × 7 metrics)</string>
+    <string name="analytics_download_segregated">Download Segregated CSV</string>
+    <string name="analytics_segregated_download_success">Segregated CSV saved to %1$s</string>
+    <string name="analyzed_view_report_btn">View Crop Season Analytics Report</string>
+    <string name="analytics_analyzed_note_open_report">Note: Charts and models use June–October crop season data. Segregated CSV download keeps full 52-week format.</string>
+    <string name="analytics_analyzed_note_refetch">Note: Re-fetch full-year weather (Jan–Dec) for complete June–October charts.</string>
+    <string name="analytics_analyzed_tap_report">Tap \"View Crop Season Analytics Report\" for charts and yield models.</string>
+</resources>

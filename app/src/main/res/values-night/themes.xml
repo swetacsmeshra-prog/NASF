@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.NASF" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:editTextColor">@color/dark_blue</item>
+        <item name="android:textColorPrimary">@color/dark_blue</item>
+        <item name="colorOnSurface">@color/dark_blue</item>
+        <item name="editTextStyle">@style/Widget.NASF.TextInputEditText</item>
+        <item name="autoCompleteTextViewStyle">@style/Widget.NASF.AutoCompleteTextView</item>
+    </style>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logo_1"
+    tools:context=".NasaPowerAnalyzedActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/analyzed_title_hindi"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/login_text1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:text="@string/analyzed_title_english"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/login_text1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/analyzed_summary_label"
+                android:textColor="@color/dark_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/analyzedSummaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="#E8F5E9"
+                android:minHeight="120dp"
+                android:padding="12dp"
+                android:text="@string/analyzed_summary_placeholder"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/analyzedDownloadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:enabled="false"
+                android:text="@string/analyzed_download_btn" />
+
+            <ProgressBar
+                android:id="@+id/analyzedProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/analyzedReportBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:enabled="false"
+        android:text="@string/analyzed_view_report_btn" />
+
+    <Button
+        android:id="@+id/analyzedClimateAnnReportBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/analyzed_view_climate_ann_btn" />
+
+    <Button
+        android:id="@+id/analyzedWindPowerReportBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/analyzed_view_wind_power_report_btn" />
+
+    <Button
+        android:id="@+id/analyzedYear2026ReportBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/analyzed_view_year2026_report_btn" />
+
+    <Button
+        android:id="@+id/analyzedContinueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:enabled="false"
+        android:text="@string/analyzed_continue" />
+</LinearLayout>

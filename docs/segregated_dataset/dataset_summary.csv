@@ -1,0 +1,2 @@
+output_file,format,total_farms,total_columns,farm_columns,weather_metric_blocks,weeks_per_metric,weather_columns,calendar_years,yield_min_t_ha,yield_max_t_ha,wind_speed_min_ms,wind_speed_max_ms,wind_speed_missing
+exports/rice_nasapower_weekly_segregated.xlsx,Wide segregated (one row per farm),1056,392,28,7,52,364,"2012,2014,2015,2022",2.4,8.75,1.07,8.61,0

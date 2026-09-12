@@ -1,0 +1,454 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><title>NASF Walkthrough</title>
+<style>body{font-family:system-ui;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.6}
+h1,h2,h3{color:#1a472a}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccc;padding:8px}
+pre{background:#f5f5f5;padding:12px;overflow:auto}code{background:#f0f0f0;padding:2px 4px}</style>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script></head><body>
+<pre style=white-space:pre-wrap;font-family:inherit># NASF Application — Walkthrough &amp; Business Context
+
+**Document version:** 1.0  
+**Generated:** May 24, 2026  
+**Package:** `com.example.nasf`
+
+---
+
+## Table of Contents
+
+1. [Business Context](#1-business-context)
+2. [Login.kt Analysis](#2-loginkt-analysis)
+3. [Full App Navigation](#3-full-app-navigation)
+4. [Per-Screen Detail](#4-per-screen-detail)
+5. [Data Flow](#5-data-flow)
+6. [Feature Modes Comparison](#6-feature-modes-comparison)
+7. [Backend APIs](#7-backend-apis)
+8. [Screen Summary](#8-screen-summary)
+
+---
+
+## 1. Business Context
+
+**NASF** is an Android **Decision Support System (DSS)** for **nutrient management and yield estimation** in the **rice–wheat cropping system** of the **Indo-Gangetic Plain (IGP)** — covering states such as **UP, Bihar, Punjab, and Haryana**.
+
+The splash screen copy (English + Hindi) states this explicitly:
+
+- *&quot;DSS for Nutrient Management in Rice-Wheat System in IGP&quot;*
+- *&quot;आईजीपी में चावल-गेहूं प्रणाली में पोषक तत्व प्रबंधन के लिए डीएसएस&quot;*
+
+### Target Users
+
+The app is aimed at **farmers and extension workers** who need help with:
+
+| Area | What the App Does |
+|------|-------------------|
+| **Authentication** | Register / log in against a PHP API (`login.php`, `signup.php`) |
+| **Yield estimation** | Predict grain yield from location, soil, and farm-management inputs |
+| **Crop advisory** | &quot;Crop Management Advisory&quot; from location + crop + target yield (soil inferred server-side) |
+
+### Domain Scope
+
+- **Crops:** Rice (चावल) and Wheat (गेहूँ)
+- **Variety duration:** Short / Medium / Long duration
+- **States (IGP):** UP, Bihar, Punjab, Haryana
+- **Language:** Bilingual UI (Hindi + English)
+- **Institutional context:** ICAR / IARI branding — agricultural research / extension product
+
+### Technical Infrastructure
+
+Backend services run on an **internal network**:
+
+| Server | Purpose |
+|--------|---------|
+| `http://172.17.30.66/loginapi/` | User authentication (PHP) |
+| `http://172.17.30.99:5000/` | ML / prediction / advisory APIs |
+
+---
+
+## 2. Login.kt Analysis
+
+**File:** `app/src/main/java/com/example/nasf/Login.kt`  
+**Layout:** `activity_login.xml`
+
+`Login` is the authentication gate after the splash screen. It wires four UI elements and two navigation paths.
+
+### UI Components
+
+| View ID | Type | Purpose |
+|---------|------|---------|
+| `login_username` | EditText | Username input |
+| `login_password` | EditText | Password input |
+| `login_btn` | Button | Submit login |
+| `signupText` | TextView | Navigate to Signup |
+| `progressBar` | ProgressBar | Shown during API call |
+
+### User Flow
+
+| Step | Behavior |
+|------|----------|
+| 1 | User enters **username** and **password** |
+| 2 | **Sign up** link → opens `Signup` activity (`finish()` on Login) |
+| 3 | **Login** tap → **`MainActivity` opens immediately** (before API validation) |
+| 4 | If both fields non-empty → POST to `login.php`; show Toast (`Login Success` or error); open **`MainActivity` again** and `finish()` |
+| 5 | If fields empty → Toast *&quot;All fields required&quot;* (but `MainActivity` may already have opened in step 3) |
+
+### API Integration
+
+- **Endpoint:** `http://172.17.30.66/loginapi/login.php`
+- **Method:** POST
+- **Parameters:** `username`, `password`
+- **Library:** `com.vishnusivadas.advanced_httpurlconnection.PutData`
+- **Success response:** `&quot;Login Success&quot;`
+
+### Known Behavior Issue
+
+Login is **not enforced** in practice:
+
+1. On **Login** button click, `MainActivity` is started **immediately** (lines 45–46), before credentials are validated.
+2. If fields are filled, the API runs asynchronously; on completion, `MainActivity` is started **again** and Login is finished.
+3. Empty fields show a Toast, but the user may already be on the dashboard from step 1.
+
+**Implication:** The dashboard is reachable without successful server authentication. API success/failure only affects the Toast message on the first navigation path.
+
+### Code Reference (Navigation Logic)
+
+```kotlin
+login.setOnClickListener {
+    val intent = Intent(this, MainActivity::class.java)
+    startActivity(intent)   // Navigates IMMEDIATELY, before API check
+
+    val username = login_username.text.toString()
+    val password = login_password.text.toString()
+
+    if (username != &quot;&quot; &amp;&amp; password != &quot;&quot;) {
+        progressBar.visibility = ProgressBar.VISIBLE
+        handler.post(Runnable {
+            val putData = PutData(&quot;http://172.17.30.66/loginapi/login.php&quot;, &quot;POST&quot;, field, data)
+            // ... API call and Toast ...
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)   // Navigates AGAIN after API
+            finish()
+        })
+    } else {
+        Toast.makeText(applicationContext, &quot;All fields required&quot;, Toast.LENGTH_SHORT).show()
+    }
+}
+```
+
+---
+
+## 3. Full App Navigation
+
+### Navigation Diagram
+
+```mermaid
+flowchart TD
+    subgraph launch[&quot;App Launch&quot;]
+        SS[SplashScreen&lt;br/&gt;3 sec delay]
+    end
+
+    subgraph auth[&quot;Authentication&quot;]
+        LG[Login&lt;br/&gt;username + password]
+        SU[Signup&lt;br/&gt;fullname, username, email, password]
+    end
+
+    subgraph hub[&quot;Dashboard&quot;]
+        MA[MainActivity&lt;br/&gt;How to estimate yield?]
+    end
+
+    subgraph features[&quot;Feature Screens&quot;]
+        MD[ManualDetails&lt;br/&gt;Location + soil lab + management]
+        AD[AutomaticDetails&lt;br/&gt;Location + management only]
+        SM[SoilManagement&lt;br/&gt;Location + crop + target yield&lt;br/&gt;Crop Management Advisory]
+    end
+
+    subgraph backends[&quot;Backends&quot;]
+        PHP[&quot;172.17.30.66&lt;br/&gt;loginapi/login.php&lt;br/&gt;loginapi/signup.php&quot;]
+        ML[&quot;172.17.30.99:5000&lt;br/&gt;rice/wheat prediction APIs&lt;br/&gt;process_data_rice/wheat&quot;]
+    end
+
+    SS --&gt;|auto| LG
+    LG &lt;--&gt;|signup / login text| SU
+    LG --&gt;|Login button&lt;br/&gt;immediate + after API| MA
+    SU --&gt;|after signup API| LG
+
+    MA --&gt;|Manually / स्वयं| MD
+    MA --&gt;|Automatically / स्वतः| AD
+    MA --&gt;|Management System| SM
+
+    LG -.-&gt;|POST credentials| PHP
+    SU -.-&gt;|POST registration| PHP
+    MD -.-&gt;|POST JSON| ML
+    AD -.-&gt;|POST JSON| ML
+    SM -.-&gt;|POST JSON| ML
+
+    MD --&gt;|AlertDialog| R1[Yield Prediction result]
+    AD --&gt;|AlertDialog| R2[Yield Prediction result]
+    SM --&gt;|AlertDialog| R3[Advisory HTML result]
+```
+
+### Activity Registry (AndroidManifest.xml)
+
+| Activity | Exported | Launcher |
+|----------|----------|----------|
+| SplashScreen | Yes | Yes (MAIN/LAUNCHER) |
+| Login | No | No |
+| Signup | No | No |
+| MainActivity | No | No |
+| ManualDetails | No | No |
+| AutomaticDetails | No | No |
+| SoilManagement | No | No |
+
+---
+
+## 4. Per-Screen Detail
+
+### 4.1 SplashScreen
+
+| Property | Value |
+|----------|-------|
+| **File** | `SplashScreen.kt` |
+| **Layout** | `activity_splash_screen.xml` |
+| **Duration** | 3 seconds (`3000L` ms) |
+| **Next screen** | Login |
+| **Behavior** | Shows branding messages; auto-navigates to Login and calls `finish()` |
+
+---
+
+### 4.2 Login
+
+| Property | Value |
+|----------|-------|
+| **File** | `Login.kt` |
+| **Layout** | `activity_login.xml` |
+| **Inputs** | Username, password |
+| **Actions** | Login → MainActivity; Sign up → Signup |
+| **API** | `POST http://172.17.30.66/loginapi/login.php` |
+
+---
+
+### 4.3 Signup
+
+| Property | Value |
+|----------|-------|
+| **File** | `Signup.kt` |
+| **Layout** | `activity_signup.xml` |
+| **Inputs** | Full name, username, email, password |
+| **Actions** | Sign up → API → Login; Login text → Login |
+| **API** | `POST http://172.17.30.66/loginapi/signup.php` |
+| **Success response** | `&quot;Sign up Success&quot;` |
+
+---
+
+### 4.4 MainActivity (Dashboard Hub)
+
+| Property | Value |
+|----------|-------|
+| **File** | `MainActivity.kt` |
+| **Layout** | `activity_main.xml` |
+| **Prompt** | &quot;How you want to Estimate Yield&quot; / &quot;आप उपज का अनुमान कैसे लगाना चाहते हैं&quot; |
+
+| Button | Target Activity | Description |
+|--------|-----------------|-------------|
+| Manual (`manual_btn`) | `ManualDetails` | Full soil + management input |
+| Automatic (`automatic_btn`) | `AutomaticDetails` | Location + management only |
+| Management System (`system_btn`) | `SoilManagement` | Crop management advisory |
+
+Feature screens do **not** navigate to new activities on completion — results appear in `AlertDialog`; user returns via **Back**.
+
+---
+
+### 4.5 ManualDetails
+
+| Property | Value |
+|----------|-------|
+| **File** | `ManualDetails.kt` |
+| **Layout** | `activity_manual_details.xml` |
+| **Purpose** | Yield prediction with full soil laboratory data |
+
+**Input sections:**
+
+1. **Location:** State (UP, Bihar, Punjab, Haryana), Longitude, Latitude
+2. **Soil chemistry:** pH, EC, OC, Available N/P/K, S, Zn, Fe, Mn, Cu
+3. **Management:** Crop, variety, residue, N/DAP/MOP, zinc sulphate, FYM, sowing/harvest dates (Julian DOY), irrigation count, grain yield target
+
+**Processing:**
+
+- Fertilizer conversions (N, P, K adjustment formulas)
+- Date picker converts calendar dates to Julian day-of-year
+- POST JSON to state/crop-specific ML endpoints
+
+**Result:** `AlertDialog` titled &quot;Yield Prediction&quot;
+
+---
+
+### 4.6 AutomaticDetails
+
+| Property | Value |
+|----------|-------|
+| **File** | `AutomaticDetails.kt` |
+| **Layout** | `activity_automatic_details.xml` |
+| **Purpose** | Yield prediction without manual soil lab entry |
+
+**Inputs:** State, lat/long, crop, variety, residue, fertilizers, FYM, dates, irrigation, grain yield (no pH/EC/micronutrient fields)
+
+**Processing:** Same fertilizer conversions; routes to `*_automatic` ML endpoints
+
+**Result:** `AlertDialog` with yield prediction (may include HTML formatting)
+
+---
+
+### 4.7 SoilManagement
+
+| Property | Value |
+|----------|-------|
+| **File** | `SoilManagement.kt` |
+| **Layout** | `activity_soil_management.xml` |
+| **Purpose** | Crop Management Advisory |
+| **Label** | &quot;Enter Location and Target Yield&quot; |
+
+**Inputs:** Longitude, latitude, crop (Rice/Wheat), variety (duration), target grain yield
+
+**Processing:** POST to `process_data_rice` or `process_data_wheat`
+
+**Result:** `AlertDialog` with HTML advisory content
+
+---
+
+## 5. Data Flow
+
+### Sequence Diagram (Login → Dashboard → Prediction)
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant L as Login
+    participant API as login.php
+    participant M as MainActivity
+    participant F as Manual/Auto/Soil
+    participant ML as ML API :5000
+
+    U-&gt;&gt;L: Tap Login
+    L-&gt;&gt;M: startActivity (immediate)
+    L-&gt;&gt;API: POST username, password
+    API--&gt;&gt;L: Login Success / error
+    L-&gt;&gt;U: Toast
+    L-&gt;&gt;M: startActivity again + finish
+
+    U-&gt;&gt;M: Choose mode
+    M-&gt;&gt;F: Open feature screen
+    U-&gt;&gt;F: Fill form + Calculate
+    F-&gt;&gt;ML: POST JSON
+    ML--&gt;&gt;F: result JSON
+    F-&gt;&gt;U: AlertDialog with prediction/advisory
+```
+
+---
+
+## 6. Feature Modes Comparison
+
+```mermaid
+flowchart LR
+    subgraph manual[&quot;Manual Mode&quot;]
+        M1[Farmer has soil test report]
+        M2[Enters lab values + practices]
+        M3[Model predicts yield]
+    end
+
+    subgraph auto[&quot;Automatic Mode&quot;]
+        A1[No soil lab on hand]
+        A2[Enters location + practices only]
+        A3[Backend uses automatic endpoints]
+    end
+
+    subgraph advisory[&quot;Management / Advisory&quot;]
+        S1[Target yield goal]
+        S2[Minimal inputs]
+        S3[Advisory from process_data APIs]
+    end
+
+    M1 --&gt; M2 --&gt; M3
+    A1 --&gt; A2 --&gt; A3
+    S1 --&gt; S2 --&gt; S3
+```
+
+| Mode | Best For | Soil Data | Output |
+|------|----------|-----------|--------|
+| **Manual** | Users with soil analysis reports | User-entered (full lab panel) | Yield prediction |
+| **Automatic** | Users without soil test data | Inferred server-side | Yield prediction |
+| **Soil Management** | Advisory / recommendation focus | Server-processed from location | Crop management advisory |
+
+---
+
+## 7. Backend APIs
+
+### 7.1 Authentication (PHP)
+
+| Endpoint | Method | Parameters | Used By |
+|----------|--------|------------|---------|
+| `http://172.17.30.66/loginapi/login.php` | POST | username, password | Login |
+| `http://172.17.30.66/loginapi/signup.php` | POST | fullname, username, email, password | Signup |
+
+### 7.2 Yield Prediction — Manual (ML)
+
+Base URL: `http://172.17.30.99:5000/`
+
+| State Group | Crop | Endpoint |
+|-------------|------|----------|
+| UP, Bihar | Rice | `/rice_up_bihar` |
+| Punjab, Haryana | Rice | `/rice_pb_hr` |
+| UP, Bihar | Wheat | `/wheat_up_bihar` |
+| Punjab, Haryana | Wheat | `/wheat_pb_hr` |
+
+### 7.3 Yield Prediction — Automatic (ML)
+
+| State Group | Crop | Endpoint |
+|-------------|------|----------|
+| UP, Bihar | Rice | `/rice_up_bihar_automatic` |
+| Punjab, Haryana | Rice | `/rice_pb_hr_automatic` |
+| UP, Bihar | Wheat | `/wheat_up_bihar_automatic` |
+| Punjab, Haryana | Wheat | `/wheat_pb_hr_automatic` |
+
+### 7.4 Crop Management Advisory (ML)
+
+| Crop | Endpoint |
+|------|----------|
+| Rice | `/process_data_rice` |
+| Wheat | `/process_data_wheat` |
+
+### 7.5 Request Format
+
+- **Auth:** Form POST via `PutData`
+- **ML APIs:** JSON POST via OkHttp
+- **Response:** JSON with `result` field; displayed in AlertDialog
+
+---
+
+## 8. Screen Summary
+
+| Screen | Role |
+|--------|------|
+| **SplashScreen** | Branding; routes to Login after 3 seconds |
+| **Login** | Authentication UI (weakly enforced); gateway to dashboard |
+| **Signup** | New user registration |
+| **MainActivity** | Hub — choose manual vs automatic yield vs advisory |
+| **ManualDetails** | Full-input yield prediction |
+| **AutomaticDetails** | Reduced-input yield prediction |
+| **SoilManagement** | Crop management advisory |
+
+---
+
+## Appendix: Source Files
+
+| Screen | Kotlin File | Layout |
+|--------|-------------|--------|
+| SplashScreen | `SplashScreen.kt` | `activity_splash_screen.xml` |
+| Login | `Login.kt` | `activity_login.xml` |
+| Signup | `Signup.kt` | `activity_signup.xml` |
+| MainActivity | `MainActivity.kt` | `activity_main.xml` |
+| ManualDetails | `ManualDetails.kt` | `activity_manual_details.xml` |
+| AutomaticDetails | `AutomaticDetails.kt` | `activity_automatic_details.xml` |
+| SoilManagement | `SoilManagement.kt` | `activity_soil_management.xml` |
+
+---
+
+*End of document*
+</pre></body></html>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logo_1"
+    tools:context=".Signup">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/Empty_text"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icar"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/logo_size1"
+                    android:layout_weight="1"
+                    android:src="@drawable/icar_logo"
+                    android:contentDescription="@string/icar_logo">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/logo1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/logo_size1"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo"
+                    android:contentDescription="@string/iari_logo">
+                </ImageView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/Login1"
+                    android:textSize="@dimen/empty_text1"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/dark_blue">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_signup"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="Sign up"
+                    android:textSize="@dimen/login_text1"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/dark_blue">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColorHint="@color/dark_blue"
+                    android:drawableRight="@drawable/ic_fullname"
+                    android:hint="Full Name"
+                    android:textSize="@dimen/empty_text1">
+
+                </EditText>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColorHint="@color/dark_blue"
+                    android:drawableRight="@drawable/ic_user"
+                    android:hint="User Name"
+                    android:textSize="@dimen/empty_text1">
+                </EditText>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColorHint="@color/dark_blue"
+                    android:drawableRight="@drawable/ic_email"
+                    android:hint="Email ID"
+                    android:textSize="@dimen/empty_text1">
+
+                </EditText>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    android:textColorHint="@color/dark_blue"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:drawableEnd="@drawable/ic_password"
+                    android:hint="Password"
+                    android:textSize="@dimen/empty_text1">
+
+                </EditText>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/Empty_text"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true">
+
+                </ProgressBar>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/signup_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sign Up"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="@dimen/login_text1"
+                    tools:ignore="SpUsage">
+
+                </Button>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/Empty_text"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/light_brown">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/loginText"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="Already have account? Login"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"
+                    android:textColor="@color/dark_blue">
+
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="climate_ann_title">Climate ANN Yield (Rain / Tmin / Tmax)</string>
+    <string name="climate_ann_title_hindi">जलवायु ANN उपज (वर्षा / Tmin / Tmax)</string>
+    <string name="climate_ann_loading">Building climate ANN yield report…</string>
+    <string name="climate_ann_error">Report failed: %1$s</string>
+    <string name="climate_ann_summary">Farm: %1$.4f°N, %2$.4f°E · Year %3$d · %4$s</string>
+    <string name="climate_ann_weeks_count">Weeks in window: %1$d</string>
+    <string name="climate_ann_range_label">Week window</string>
+    <string name="climate_ann_range_crop">Crop season (weeks 23–44)</string>
+    <string name="climate_ann_range_wind">Wind window (weeks 23–42)</string>
+    <string name="climate_ann_range_sow_harvest">Sowing → harvest</string>
+    <string name="climate_ann_predictors_title">Predictors (ANN inputs)</string>
+    <string name="climate_ann_predictor_rain">Rain: %1$.0f mm</string>
+    <string name="climate_ann_predictor_tmin">T min mean: %1$.1f °C</string>
+    <string name="climate_ann_predictor_tmax">T max mean: %1$.1f °C</string>
+    <string name="climate_ann_architecture">Architecture: 3 inputs (Rain, Tmin, Tmax) → hidden layers → Yield</string>
+    <string name="climate_ann_result_title">ANN predicted yield</string>
+    <string name="climate_ann_yield_value">%1$.2f t/ha</string>
+    <string name="climate_ann_metrics">RMSE: %1$.3f t/ha · STDV: %2$.3f · R²: %3$.2f · MAE: %4$.3f t/ha</string>
+    <string name="climate_ann_training_note">Trained on %1$d farms · weeks %2$d–%3$d · %4$s</string>
+    <string name="climate_ann_chart_rainfall">Weekly Rainfall (selected window)</string>
+    <string name="climate_ann_chart_temperature">Weekly Tmin / Tmax (°C)</string>
+    <string name="climate_ann_continue">Continue to Calculate</string>
+    <string name="analyzed_view_climate_ann_btn">View Climate ANN Yield (Rain/Tmin/Tmax)</string>
+</resources>

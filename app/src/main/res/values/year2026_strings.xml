@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="year2026_title">2026 Full-Year Climate Report</string>
+    <string name="year2026_title_hindi">2026 पूर्ण वर्ष जलवायु रिपोर्ट</string>
+    <string name="year2026_loading">Building 2026 full-year report…</string>
+    <string name="year2026_error">Report failed: %1$s</string>
+    <string name="year2026_summary">Farm: %1$.4f°N, %2$.4f°E · Year %3$d · Weeks 1–52</string>
+    <string name="year2026_stats_line">Total rain %1$.0f mm · Tmin %2$.1f°C (σ %3$.1f) · Tmax %4$.1f°C (σ %5$.1f) · Wind %6$.2f m/s (σ %7$.2f)</string>
+    <string name="year2026_weeks_count">Weeks with data: %1$d / 52</string>
+    <string name="year2026_chart_rainfall">52-Week Rainfall (mm)</string>
+    <string name="year2026_chart_temperature">52-Week Tmin / Tmax (°C)</string>
+    <string name="year2026_chart_wind">52-Week Wind Speed (m/s)</string>
+    <string name="year2026_chart_solar">52-Week Solar Radiation (kWh/m²/day)</string>
+    <string name="year2026_chart_humidity">52-Week Humidity (%)</string>
+    <string name="year2026_desc">Data: NASA POWER weekly, full calendar year 2026</string>
+    <string name="year2026_open_season_report">Open Weeks 23–44 Model Report</string>
+    <string name="analyzed_view_year2026_report_btn">View 2026 Full-Year Climate Report</string>
+</resources>

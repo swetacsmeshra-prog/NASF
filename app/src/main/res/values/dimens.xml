@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_text1">25dp</dimen>
+    <dimen name="splash_text2">30dp</dimen>
+    <dimen name="empty_text1">20dp</dimen>
+    <dimen name="login_text1">30dp</dimen>
+    <dimen name="logo_size1">60dp</dimen>
+    <dimen name="nutrientvalues">15dp</dimen>
+    <dimen name="managementvalues">15sp</dimen>
+    <dimen name="dashboard_manual">100dp</dimen>
+    <dimen name="nutrient_empty">10dp</dimen>
+    <dimen name="soil_mangt_btn">24dp</dimen>
+</resources>

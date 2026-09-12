@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wind_power_title">2026 Crop Season Model Comparison (Weeks 23–44)</string>
+    <string name="wind_power_title_hindi">2026 फसल मौसम मॉडल तुलना (सप्ताह 23–44)</string>
+    <string name="wind_power_loading">Building 2026 wind &amp; power report…</string>
+    <string name="wind_power_error">Report failed: %1$s</string>
+    <string name="wind_power_summary">Farm: %1$.4f°N, %2$.4f°E · Year %3$d · %4$s</string>
+    <string name="wind_power_season_dates">Sowing: %1$s · Harvest: %2$s</string>
+    <string name="wind_power_stats_line">Rain %1$.0f mm · Tmin %2$.1f°C (σ %3$.1f) · Tmax %4$.1f°C (σ %5$.1f) · Wind %6$.2f m/s (σ %7$.2f)</string>
+    <string name="wind_power_chart_rainfall">Weekly Rainfall (weeks 23–44)</string>
+    <string name="wind_power_chart_temperature">Weekly Tmin / Tmax (°C)</string>
+    <string name="wind_power_chart_wind">Weekly Wind Speed (m/s)</string>
+    <string name="wind_power_chart_solar">Weekly Solar Radiation (kWh/m²/day)</string>
+    <string name="wind_power_model_comparison">Model Yield Comparison (2026 season)</string>
+    <string name="wind_power_metrics_title">Validation metrics (training set)</string>
+    <string name="wind_power_model_yield">%1$s: %2$.2f t/ha</string>
+    <string name="wind_power_model_rmse">RMSE: %1$.3f t/ha · STDV: %2$.3f · R²: %3$.2f</string>
+    <string name="wind_power_rf_title">Random Forest Algorithm</string>
+    <string name="wind_power_cubic_title">Cubic Model Algorithm</string>
+    <string name="wind_power_xgb_title">XGBoost Algorithm</string>
+    <string name="wind_power_ann_title">ANN Algorithm</string>
+    <string name="wind_power_svm_title">SVM Algorithm</string>
+    <string name="wind_power_desc_season">Data: NASA POWER weekly, weeks 23–44</string>
+    <string name="wind_power_open_year_report">Open 2026 Full-Year Climate Report</string>
+    <string name="analyzed_view_wind_power_report_btn">View Weeks 23–44 Model Report</string>
+    <string name="wind_power_continue">Continue to Calculate</string>
+</resources>

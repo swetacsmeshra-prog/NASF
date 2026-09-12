@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="manual_climate_title">Weather Details</string>
+    <string name="manual_climate_title_hindi">मौसम विवरण</string>
+    <string name="manual_climate_section_hint">Season climate (weeks 23–44) — used with Calculate Yield</string>
+    <string name="manual_climate_subtitle">Enter season climate values (weeks 23–44). Yield is calculated on-device from a model trained on rice_nasapower_weekly_wind_power_segregated123 — no internet or API required.</string>
+    <string name="manual_climate_rain_label">Rainfall (mm) — season total</string>
+    <string name="manual_climate_tmin_label">T min mean (°C)</string>
+    <string name="manual_climate_tmax_label">T max mean (°C)</string>
+    <string name="manual_climate_wind_label">Wind mean (m/s)</string>
+    <string name="manual_climate_solar_label">Solar mean (kWh/m²/day)</string>
+    <string name="manual_climate_humidity_label">Humidity mean (%)</string>
+    <string name="manual_climate_calculate">Calculate Yield</string>
+    <string name="manual_climate_result_title">Predicted yield</string>
+    <string name="manual_climate_yield_value">%1$.2f t/ha</string>
+    <string name="manual_climate_yield_changed">Previous: %1$.2f t/ha → New: %2$.2f t/ha (change %3$s)</string>
+    <string name="manual_climate_yield_first">Yield for this entry: %1$.2f t/ha</string>
+    <string name="manual_climate_inputs_used">Inputs used — Rain %1$.0f mm · Tmin %2$.1f°C · Tmax %3$.1f°C · Wind %4$.2f m/s · Solar %5$.1f · RH %6$.1f%%</string>
+    <string name="manual_climate_metrics">RMSE: %1$.3f t/ha · STDV: %2$.3f · R²: %3$.2f · MAE: %4$.3f t/ha</string>
+    <string name="manual_climate_training_note">Excel/CSV-trained on %1$d farms · weeks %2$d–%3$d · %4$s · on-device (no API)</string>
+    <string name="manual_climate_error_empty">Please fill all six climate fields.</string>
+    <string name="manual_climate_error_number">Enter a valid number for %1$s.</string>
+    <string name="dashboard_manual_climate_yield">Climate Yield</string>
+    <string name="combined_yield_title">Yield Prediction</string>
+    <string name="climatology_hint">30-yr JUN–OCT here: rain %1$s±%2$s mm · Tmin %3$s±%4$s°C\nNearest %5$s km · %6$s</string>
+    <string name="climatology_season_header">vs 30-yr JUN–OCT (%1$s km, NASA POWER 1996–2025):</string>
+    <string name="climatology_outlier_title">Value looks unusual</string>
+    <string name="climatology_outlier_message">%1$s is %2$s vs 30-year normal (z = %3$s). Continue anyway?</string>
+    <string name="climatology_z_line">vs 30-yr: %1$s</string>
+    <string name="climatology_lat_label">Latitude</string>
+    <string name="climatology_lon_label">Longitude</string>
+    <string name="climatology_fill_typical">Fill typical climate (nearest 30-yr)</string>
+</resources>

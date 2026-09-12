@@ -1,0 +1,4 @@
+metric,unit,long_period_average,standard_deviation,sd_pct_of_mean,normal_range_rule,source
+All_India_SW_Monsoon_Rainfall_JJAS,cm,89.0,9.0,10.0,within ±1 SD of LPA (~±10%),IMD Climate Prediction FAQ / operational LRF practice
+Monsoon_Onset_Kerala_Date,days,1 June,7.0,,climatological SD ~7 days; IMD onset model error ±4 days,IMD Press Release 15 May 2026 (onset forecast)
+July_All_India_Rainfall_LPA,mm,280.4,,,below normal defined as <94% of LPA in Jul outlook,IMD Press Release 30 June 2026

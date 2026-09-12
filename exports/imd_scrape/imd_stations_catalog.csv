@@ -1,0 +1,1404 @@
+station_id,station_name
+100153,Golagokarnath
+43192,Panjim
+100169,Konch
+43257,Agumbe
+100185,Partawal
+43311,Amini Divi
+100201,Sandila Apmc
+43352,Alappuzha
+100217,Haldwani
+50003,Aurangabad
+100233,Jiyaganj Krishak Bazar
+88809,Kancheepuram
+100249,Navapara
+88826,Nagaon
+100265,Ferozpur Jhirka Apmc
+88848,Kangan
+100281,Kosli Apmc
+90023,Gund
+100297,Pillukhera
+93258,Nabarangpur
+100313,Uchana
+99375,Barpeta Kvk
+100329,Gadarwara
+99391,Saraiya
+100345,Krishi Upaj Mandi Samiti-pandhurna
+99408,Amreli Kvk
+100361,Aatpadi
+99424,Chamba Saru Farm
+99440,Latehar Balumath
+99456,Mandya Kvk
+18001,Thane
+99472,Marukheda
+30008,Kollam
+99488,Chandel
+31001,Champawat
+99504,Puducherry Kvk
+42054,Katra
+100376,Lonand
+99522,Papparapatty
+42083,Shimla-city
+100393,Bonai
+99538,Pithoragarh Kvk
+42123,Sriganganagar
+100414,Barnala
+99554,Mohana
+42181,New Delhi-palam
+100430,Nawanshahr Market
+99921,New Delhi-delhi University
+42266,Shahjahanpur
+100446,Cumbum
+99938,Ahmedabad-chandkheda
+42349,Tonk
+100463,Mayiladuthurai
+99954,Dehradun-asharori
+42387,Muzaffarpur
+100479,Sathyamangalam
+99973,Lucknow-mohanlalganj
+42450,Bundi
+100495,Vettavalam
+99991,Skardu
+42516,Shillong
+100511,Gajwel
+100008,Pakur
+42618,Kailashahar
+100527,Miryalaguda
+100024,Bayana
+42701,Ranchi
+100543,Vikarabad
+100040,Dausa
+42767,Pachmarhi
+100559,Noida Apmc
+100056,Hindoun
+42834,Amreli
+101013,Kameng-tenga Dam
+100072,Kotputli
+42894,Baripada
+101029,Rongnichu
+100088,Niwai
+42948,Rajnandgaon
+101045,Vishnugad Pipalkoti
+100105,Sadulpur
+43017,Parbhani
+101062,Devprayag
+100121,Suratgarh
+43076,Udgir
+101085,Tanakpur
+100137,Bindiki
+43128,Hyderabad
+43158,Sangli
+100160,Jangipura
+43220,Bapatla
+100176,Milak
+43287,Madikeri
+100192,Rampur Bilaspur
+43328,Pondicherry
+100208,Tikuniya
+43367,Carnicobar
+100224,Sitarganj
+60001,Janjgir
+100240,Samsi Sub Market Yard
+88817,Sasan Gir
+100256,Ateli Apmc
+88834,Khordha
+100272,Jagadhri Apmc
+90009,Gauchar
+100288,Narnaund
+90142,Jafarpur
+100304,Sadhaura Apmc
+99366,Garikapadu
+100320,Balaghat
+99382,Araria
+100336,Khirkiya
+99398,Dumarbahar
+100352,Neemuch
+99415,Surat Kvk
+99431,Bokaro Kvk
+99447,Jagannathpur Bau
+99463,Kavaratti Kvk
+26003,Namchi
+99479,Sakoli
+30016,Mamallapuram
+99495,Balangir Kvk
+42027,Srinagar-city
+100367,Chamorshi
+99511,Chittorgarh Kvk
+42066,Kalpa
+100383,Varora
+99529,Virinjipuram
+42104,Nahan
+100405,Padampur Od
+99545,Chitrakoot Kvk
+42147,Mukteshwar
+100421,Gurdaspur Apmc
+99561,Purulia
+42237,Phalodi
+100437,Tarn Taran Apmc
+99929,Chandigarh-panchkula
+42308,Itanagar
+100453,Harur
+99945,Mumbai-worli
+42369,Lucknow-airport
+100470,Paramakudi
+99963,Bengaluru-gkvk
+42407,Goalpara
+100486,Thiyagadurgam
+99980,Jammu-mata Vaishno Devi Ji
+42474,Prayagraj
+100502,Badepally
+99998,Shigar
+42555,Jhalawar
+100518,Jangaon
+100015,Anta
+42651,Idar
+100534,Parkal
+100031,Bijoliya
+42726,Aizawl
+100550,Rajsamand
+100047,Dungarpur
+42795,Chaibasa
+101004,Budhil
+100063,Kapasan
+42871,Gondia
+101020,Maneribhali-i
+100079,Malpura
+42925,Malegaon
+101036,Shrinagar
+100096,Pratapgarh Rj
+42971,Bhubneshwar-airport
+101052,Bageshwar
+100112,Sri Dungargarh
+43049,Gopalpur
+101074,Kanatal
+100128,Atarra Apmc
+43102,Paralakhemundi
+100144,Chibramau
+100151,Firozabad Apmc
+43187,Narasapur
+100167,Khalilabad
+43243,Kavali
+100183,Nawabganj Apmc
+43303,Vellore
+100199,Sahjanwa Apmc
+43347,Nagapattinam
+100215,Bazpur
+50001,Madhubani
+100231,Gangarampur
+88807,Bhimbar
+100247,Kurud
+88824,Sunderban
+100263,Ellanabad
+88846,Sonamarg
+100279,Kalayat
+90018,Ukhimath
+100295,Panchkula Apmc
+93255,Deogarh
+100311,Tauru Apmc
+99373,Tawang Chamgbu
+100327,Damoh
+99389,Katihar
+100343,Krishi Upaj Mandi Samiti-kukshi
+99406,Ela North Goa
+100359,Tikamgarh
+99422,Damla
+99438,Hazaribag Kvk
+99454,Tamaka
+13002,Deogarh
+99470,Pipraundh
+30006,Ooty
+99486,Mohol
+30027,Bodhgaya
+99502,Puri Kvk
+42046,Kukernag
+100374,Gevrai
+99518,Sirohi
+42080,Bilaspur
+100391,Betnoti
+99536,Matela
+42116,Joshimath
+100412,Abohar
+99552,Mainpuri Kvk
+42178,Gurgaon
+100428,Moga Apmc
+99919,Hanumangarh
+42262,Aligarh
+100444,Chetpet
+99936,Ahmedabad-navrangpura (s.p.stadium)
+42343,Ajmer
+100460,Lalgudi
+99952,Dehradun-jhajhara
+42383,Motihari
+100477,Rajasingamangalam
+99971,Lucknow-control Room
+42439,Jalore
+100493,Vellakoil
+99987,Guwahati-iit Guwahati
+42503,Malda
+100509,Gaddiannaram
+100006,Koderma
+42599,Dumka
+100525,Makthal
+100022,Barodamev
+42679,Umaria
+100541,Tirumalgiri
+100038,Chomu Grain
+42752,Dhar
+100557,Kopaganj
+100054,Goluwala
+42816,Kolkata-salt Lake
+101011,Integrated Kashang
+100070,Kherli
+42886,Jharsuguda
+101027,Ranganadi
+100086,Neem Ka Thana
+42946,Brahmapuri
+101043,Tidong-i
+100103,Rawatsar
+43011,Beed
+101060,Chopta
+100119,Sumerpur
+43071,Jeur
+101083,Ranikhet
+100135,Bharuasumerpur
+43121,Kalaburgi
+43150,Visakhapatnam
+100158,Jalalabad Apmc
+43205,Ballari
+100174,Mahoba
+43279,Chennai- Meenambakkam
+100190,Rae Bareli
+43324,Ariyalur
+100206,Sirsaganj
+43361,Tondi
+100222,Ramnagar
+50014,Dhancho
+100238,Panskura I Krishak Bazar
+88815,Spiti Valley
+100254,Adampur
+88832,Kargil
+100270,Ismailabad
+90005,Chamba (ranichauri)
+100286,Mullana
+90061,Vellanikara
+100302,Ratia
+99364,Banavasi
+100318,Agar
+99380,Hailakandi
+100334,Khargone
+99396,Bijapur
+100350,Mandsaur
+99413,Narmada
+100366,Baramati
+99429,Kupwara Kvk
+99445,Sahibganj Kvk
+99461,Thavanur
+26001,Mangan
+99477,Deora
+30014,Sanchi
+99493,Zunheboto Kvk
+40062,Tapovan
+99509,Ropar Kvk
+42063,Keylong
+100381,Risod
+99527,Sirugamani
+42101,Patiala
+100402,Malkangiri
+99543,Bulandshahar Kvk
+42143,Bijnor
+100419,Fazilka
+99559,Murshidabad
+42217,Tadong
+100435,Sardulgarh Apmc
+99927,Ghaziabad
+42296,Kalimpong
+100451,Gobichettipalayam
+99943,Mumbai-chembur
+42366,Kanpur
+100468,Palani
+99959,"Ahmedabad-iiph,gandhi Nagar"
+42403,Coochbehar
+100484,Thirupathur
+99978,Bhopal-nabi Bagh
+42469,Hamirpur
+100500,Achampet
+99996,Muzaffarabad
+42542,Udaipur
+100516,Jagtial
+100013,Aabu Road
+42639,Kandla
+100532,Nawabpet
+100029,Bhinmal
+42712,Asansol
+100548,Partur
+100045,Deoli
+42792,Sundergarh
+101002,Bajoli Holi
+100061,Jhunjhunu
+42860,Betul
+101018,Malana
+100077,Mahuwa Mandawar
+42916,Daman
+101034,Shanan
+100094,Pilibanga
+42969,Angul
+101050,Auli
+100110,Shahpura
+43045,Rayagada
+101072,Jageshwar
+100126,Akbarpur
+43091,Malkangiri
+100142,Charra
+100149,Fatehpur Apmc
+43181,Amaravati-gannavaram
+100165,Kasganj
+43237,Anantapur
+100181,Naugarh Apmc
+43296,Bengaluru-hal Airport
+100197,Safdarganj
+43344,Tiruchirapalli
+100213,Urai
+43377,Kanyakumari
+100229,Dhupguri Principal Market Yard
+88805,Hattian (jhelum Valley)
+100245,Dhamtari
+88822,Hampi
+100261,Dabwali
+88839,Chandanwari
+100277,Kaithal
+90016,Soneprayag
+100293,Pai Apmc
+90188,Khushinagar
+100309,Siwani
+99371,Namsai
+100325,Chhindwara
+99387,East Champaran
+100341,Krishi Upaj Mandi Samiti-kareli
+99403,Narayanpur
+100357,Sheopurkalan
+99420,Mahendragarh Kvk
+99436,Godda
+99452,Hanuman Matti
+11001,Hamirpur
+99468,Madiyahar
+30004,Patanitop
+99484,Tulga
+30025,Panipat
+99500,Mayurbhanj
+42044,Qazigund
+100372,Dondaicha
+99516,Jalore Kvk
+42077,Una
+100388,Balugaon
+99534,Kampasagar
+42112,Mussorie
+100410,Udala
+99550,Kannauj Anaughi
+42176,Rohtak
+100426,Mansa
+99917,Anandpur Sahib
+42259,Agra (mo Taj)
+100442,Arani
+99934,Hyderabad-icrisat Patancheru
+42328,Jaisalmer
+100458,Kilpennathur
+99950,Ranchi-kanke
+42379,Gorakhpur
+100475,Polur
+99969,Jaipur-amer
+42423,Jorhat
+100491,Vandavasi
+99985,Panjim-old Goa
+42498,Bhagalpur
+100507,Echoda
+100004,Gumla
+42587,Daltonganj
+100523,Madnoor
+100020,Baran
+42671,Sagar
+100539,Suryapeta
+100036,Chomehla
+42740,Surendranagar
+100555,Gonda
+100052,Gangapur-rj
+42809,Kolkata-dum Dum
+101009,Dhaulia Ganga
+100068,Khajuwala
+42882,Sonepur
+101025,Pakal Dul
+100084,Nagar
+42939,Wardha
+101041,Tashiding
+100101,Raniwara
+43003,Mumbai-santacruz
+101057,Chakrata
+100117,Sujangarh
+43064,Pune-lohegaon Airport
+101081,Rajaji National Park
+100133,Basti
+43113,Satara
+43137,Khammam
+100156,Hathras
+43200,Dharwad
+100172,Madhoganj
+43275,Tirupathi
+100188,Hingoli
+43318,Coonoor
+100204,Shamli
+43355,Kottayam
+100220,Khatima
+50012,Kugti
+100236,Mohamad Bazar Krishak Bazar
+88812,Thiruvannamalai
+100252,Himmatnagar
+88829,Kausani
+100268,Hodal
+90003,Barkot
+100284,Meham Apmc
+90059,Kumarakom
+100300,Raipur Rani Apmc
+99362,Kalavacharla
+100316,Narwal
+99378,Dhubri Kvk
+100332,Jaora
+99394,Sheikpura
+100348,Krishi Upaj Mandi Samiti-singrauli
+99411,Dang
+100364,Arjuni Morgoan
+99427,Baramulla
+99443,Palamu Daltongunj
+99459,Kawadimatti
+21002,Mokokchung
+99475,Kalyanpur
+30012,Chitrakoot
+99491,Lengpui Kvk
+31004,Lavale
+99507,Nurmahal
+42059,Dalhousie
+100379,Manora
+99525,Ramnadu
+42097,Bhatinda
+100399,Jaleswar
+99541,Motipur Harhwa
+42138,Muzaffarnagar
+100417,Faridkot Apmc
+99557,Ramshai
+42187,Moradabad
+100433,Ropar
+99925,Warangal
+42273,Bahraich
+100449,Erode
+99941,Mumbai-borivali
+42361,Gwalior
+100466,Natham
+99957,Ahmedabad-raikhad
+42397,Siliguri
+100482,Theni
+99976,Srinagar-dal Lake
+42459,Shivpuri
+100498,Virudhachalam
+99994,Khaplu
+42539,Deesa
+100514,Gudimalkapur
+100011,Simdega
+42631,Naliya
+100530,Narayanpet
+100027,Bhadra
+42709,Burdwan
+100546,Zaheerabad
+100043,Degana
+42779,Pendra
+101000,Allain Duhangan
+100059,Jaitaran
+42851,Jalgaon
+101016,Kishanganga
+100075,Loonkaransar
+42909,Veraval
+101032,Sawra Kuddu
+100091,Padampur
+42964,Boudh
+101048,Abbott Mount
+100108,Sangariya
+43029,Chandrapur
+101068,Guptkashi
+100124,Achnera
+43086,Ramagundam
+101089,Karanjkhop
+100140,Chandauli
+43169,Raichur
+100163,Kannauj
+43226,Honnavar
+100179,Naanpara
+43293,Bengaluru-international Airport
+100195,Robertsganj
+43339,Kodaikanal
+100211,Ujhani
+43372,Thiruvananthapuram- Airport
+100227,Bethuadahari Principal Market Yard
+88803,Mirpur
+100243,Balod
+88820,Badami
+100259,Cheeka
+88837,Baltal
+100275,Jind
+90014,Rishikesh
+100291,Nissing
+90145,Pitampura
+100307,Shahbad
+99369,Amadalavalasa
+100323,Bina
+99385,Begusarai
+100339,Krishi Upaj Mandi Samiti-banapura
+99401,Koriya
+100355,Sendhwa
+99418,Indri Kvk
+99434,Garhwa Kvk
+99450,Hardanhally
+10001,Faridabad
+99466,Talun
+30002,Anni
+99482,Nagpur Kvk
+30023,Lachung
+99498,Gajapati2
+42034,Leh
+100370,Devala
+99514,Hanumangarh Kvk
+42075,Jalandhar
+100386,Anandapur
+99532,Wyra
+42108,Uttarkashi
+100408,Rayagada
+99548,Gorakhpur Kvk
+42170,Churu
+100424,Kotkapura Apmc
+99915,Kurukshetra
+42255,Alwar
+100440,Annur
+99932,Hyderabad-hayathnagar
+42314,Dibrugarh
+100456,Kamuthi
+99948,Chennai-ennore
+42374,Ayodhya
+100473,Pethappampatti
+99967,Jaipur-transport Nagar
+42415,Tezpur
+100489,Ulundurpettai
+99983,Panjim-pernem
+42488,Chapra
+100505,Devarakadra
+100002,Dhanbad
+42571,Satna
+100521,Karimnagar
+100018,Balotra
+42662,Ujjain
+100537,Shankarapally
+100034,Chaksu
+42731,Dwarka
+100553,Amroha Apmc
+100050,Gajsinghpur
+42805,Kolkata-howrah
+101007,Chujachen
+100066,Kesrisinghpur
+42876,Durg
+101023,Nathpa Jhakri
+100082,Merta City
+42935,Washim
+101039,Subansiri Lower
+100099,Ramganj Mandi
+42976,Paradip
+101055,Bhowali
+100115,Sriganganagar F And V
+43058,Alibag
+101077,Lohaghat
+100131,Balrampur Apmc
+43110,Ratnagiri
+100147,Etah
+100154,Hapur
+43193,Vengurla
+100170,Kosikalan
+43263,Hassan
+100186,Powayan
+43314,Kozhikode
+100202,Shaganj
+43353,Kochi
+100218,Jaspur
+50004,Rajgir
+100234,Kalna Sub Market Yard
+88810,Mahabalipuram
+100250,Patelpali Raigarh
+88827,Nalbari
+100266,Ganaur
+88849,Barari Marg
+100282,Ladwa
+90027,Udhampur
+100298,Pundri
+93260,Jagatsinghpur
+100314,Uklana Apmc
+99376,Cacher
+100330,Harda
+99392,Nawada
+100346,Krishi Upaj Mandi Samiti-sanawad
+99409,Chhotaudepur
+100362,Aheri
+99425,Sundernagar Kvk
+99441,Lohardaga Kvk
+99457,Chandurayanghalli
+19001,Champhai
+99473,Rajgarh
+30010,Varkala
+99489,Tura
+31002,Chinchwad
+99505,Barnala Kvk
+42056,Jammu-city
+100377,Mangalwedha
+99523,Kattapakkam
+42084,Shimla-airport
+100395,Dunguripali
+99539,Azamgarh
+42131,Hisar
+100415,Bhikhi Apmc
+99555,Tissuhi
+42182,New Delhi-safdarjung
+100431,Raman Apmc
+99922,New Delhi-narela
+42270,Lakhimpur Kheri
+100447,Desur
+99939,Ahmedabad-satellite Area (isro-sac)
+42350,Bhiwani
+100464,Moolanur
+99955,Dehradun-ucost
+42393,Supaul
+100480,Sembanarkoil
+99974,Raipur-labhandi
+42452,Kota
+100496,Vikiravandi
+99992,Chilas
+42523,Lumding
+100512,Gangadhara
+100009,Ramgarh
+42619,Silchar
+100528,Nagarkurnool
+100025,Beawar
+42704,Panagarh
+100544,Wanaparthy Road
+100041,Deedwana
+42771,Seoni
+100560,Pilibhit
+100057,Iklera
+42838,Bhavnagar
+101014,Karcham Wangtoo
+100073,Kuchamancity
+42895,Balasore
+101030,Sainj
+100089,Nohar
+42961,Titlagarh
+101046,Vishnuprayag
+100106,Sadulshahar
+43021,Nanded
+101063,Dhanaulti
+100122,Uniyara
+43081,Nizamabad
+101086,Udham Singh Nagar
+100138,Bisalpur
+43133,Nalgonda
+43161,Vijayapura
+100161,Jaunpur Apmc
+43221,Ongole
+100177,Mirzapur
+43289,Mandya
+100193,Rasra Apmc
+43333,Port Blair
+100209,Tulsipur Apmc
+43369,Minicoy
+100225,Vikasnagar
+88801,Astore
+100241,Sheoraphuli
+88818,Patan
+100257,Bhattu Kalan Apmc
+88835,Amarnath Holy Cave
+100273,Jakhal
+90010,Govind Ghat
+100289,Narwana
+90143,Mungeshpur
+100305,Safidon
+99367,Vizianagaram
+100321,Bareli
+99383,Aurangabad Bh Kvk
+100337,Krishi Upaj Mandi Samiti-anjad
+99399,Kanker
+100353,Pipariya
+99416,Valsad
+99432,Chatra
+99448,Bagalkot
+53,Kanpur Airforce
+99464,Aonwari Kvk
+26004,Pakyong
+99480,Buldhana Kvk
+30017,Rameshwaram
+99496,Cuttack Kvk
+42028,Pahalgam
+100368,Chandvad
+99512,Dholpur Kvk
+42071,Amritsar
+100384,Washim
+99530,Aruppukottai
+42105,Chandigarh-city
+100406,Panposh
+99546,Fatehpur Kvk
+42148,Pantnagar
+100422,Hoshiyarpur
+99911,Pithoragarh
+42242,Nagaur
+100438,Ammoor
+99930,Chandigarh-mohali
+42309,North Lakhimpur
+100454,Kalavai
+99946,Thiruvallikeni
+42370,Barabanki
+100471,Paramathi Velur
+99964,Dadra Nagar Haveli
+42410,Guwahati-airport
+100487,Tindivanam
+99981,Jammu-airport
+42479,Varanasi
+100503,Bhainsa
+99999,Ghizer
+42559,Guna
+100519,Kalwakurthy
+100016,Atru
+42654,Gandhinagar
+100535,Sadasivpet
+100032,Bilara
+42727,Aizawl-lengpui
+100551,Ridmalsar
+100048,Fatehnagar
+42798,Jamshedpur
+101005,Chamera-iii
+100064,Kekri
+42872,Raipur-mana
+101021,Maneribhali-ii (dharasu)
+100080,Mandalgarh
+42931,Buldhana
+101037,Singoli Bhatwari
+100097,Raisinghnagar
+42972,Nayagarh
+101053,Baijnath
+100113,Sri Madhopur
+43053,Puri
+101075,Kedarnath
+100129,Auraiya
+43105,Kalingapatnam
+100145,Dadri Up
+100152,Ghiror
+43189,Kakinada
+100168,Khurja
+43245,Nellore
+100184,Palia Kalan
+43309,Maya Bandar
+100200,Sambhal Apmc
+43348,Adiramapattinam
+100216,Gadarpur
+50002,Nalanda
+100232,Islampur Principal Market Yard
+88808,Nilam
+100248,Mungeli
+88825,Kaziranga
+100264,Fatehabad
+88847,Ganderbal
+100280,Kanina Apmc
+90020,Anantnag
+100296,Pehowa
+93256,Bargarh
+100312,Tohana
+99374,Baksa
+100328,Datia
+99390,Khagaria
+100344,Krishi Upaj Mandi Samiti-nasrullaganj
+99407,Madgaon
+100360,Timarni
+99423,Bilaspur Kvk
+99439,Diyakel Khunti
+99455,Gangavathi
+13003,Giridih
+99471,Khandwa Kvk
+30007,Bekal
+99487,Washim Kvk
+30029,Palakkad
+99503,Gunupur Kvk
+42048,Bhaderwah
+100375,Kannad
+99521,Virdhachalam
+42081,Kullu
+100392,Bhadrak
+99537,Nainital Jeolikot
+42117,Chamoli
+100413,Amloh Apmc
+99553,Niyamatpur
+42180,New Delhi-ayanagar
+100429,Muktsar
+99920,Pali
+42265,Mainpuri
+100445,Cheyyar
+99937,Ahmedabad-rakhiyal
+42348,Jaipur-amo Jaipur
+100462,Maduranathangam
+99953,Dehradun-sahastradhara
+42384,Ballia
+100478,Sankarapuram
+99972,Lucknow-malihabad
+42447,Bhilwara
+100494,Vellore
+99990,Gilgit
+42515,Cherrapunji
+100510,Gadwal
+100007,Lohardaga
+42603,Baharampur
+100526,Metpally
+100023,Bassi
+42693,Ambikapur
+100542,Vatpally
+100039,Chottisadri
+42754,Indore
+100558,Mohamadabad Apmc
+100055,Guda Godji
+42830,Porbandar
+101012,Kameng-bichom Dam
+100071,Kishangarh Renwal
+42891,Keonjhargarh
+101028,Rangit
+100087,Nimbahera
+42947,Gadchiroli
+101044,Upper Sindh-ii
+100104,Rawla
+43014,Aurangabad
+101061,Corbett National Park
+100120,Surajgarh
+43075,Osmanabad
+101084,Sattal
+100136,Bilsi
+43125,Bidar
+43157,Kolhapur
+100159,Jalaun
+43213,Kurnool
+100175,Mauranipur
+43284,Mangaluru
+100191,Rampur
+43325,Salem
+100207,Sitapur
+43363,Pamban
+100223,Roorkee
+50015,Manimahesh Lake
+100239,Samsherganj Krishak Bazar
+88816,Silvassa
+100255,Asandh
+88833,Nuapada
+100271,Israna Apmc
+90006,Chinyalisour
+100287,Naraingarh Apmc
+90141,Pusa
+100303,Rewari
+99365,Nellore_kvk
+100319,Ashta
+99381,Udi
+100335,Khategaon
+99397,Dantewada
+100351,Mhow
+99414,Panchmahal Kvk
+99430,Reasi Kvk
+99446,Bano Simdega
+99462,Pattambi
+26002,Gyalsingh
+99478,Aurangabad Mh Kvk
+30015,Igatpuri
+99494,Angul Kvk
+42026,Gulmarg
+99510,Anta Baran
+42065,Manali
+100382,Sindi
+99528,Tirur
+42103,Ambala
+100404,Nimapara
+99544,Chandauli Kvk
+42146,Nainital
+100420,Gidderbaha
+99560,Ashoknagar
+42220,Pasighat
+100436,Tappa
+99928,Chandigarh- Airport
+42299,Gangtok
+100452,Gudiyatham
+99944,Mumbai-mulund
+42367,Kanpur Barra
+100469,Panruti
+99960,"Ahmedabad-gift City, Gandhi Nagar"
+42406,Dhubri
+100485,Thiruppur
+99979,Guwahati-dispur
+42473,Banda
+100501,Atmakur
+99997,Dindigul Iaf
+42546,Chittorgarh
+100517,Jammikunta
+100014,Anoopgarh
+42647,Ahmedabad
+100533,Pargi
+100030,Bijay Nagar
+42724,Agartala
+100549,Tumsar
+100046,Dooni
+42793,Rourkela
+101003,Baspa
+100062,Kaman
+42867,Nagpur-sonegaon Airport
+101019,Malana-ii
+100078,Mahuwa Rj
+42921,Nashik
+101035,Shongtong Karcham
+100095,Piparcity
+42970,Bhubneshwar-cuttack
+101051,Badrinath
+100111,Sojat Road
+43048,Chhatrapur
+101073,Jeolikot
+100127,Anand Nagar Apmc
+43097,Koraput
+100143,Chaubepur
+100150,Fatehpur Sikri
+43185,Machilipatnam
+100166,Khair
+43241,Cuddappah
+100182,Nautanwa Apmc
+43301,Dharmapuri
+100198,Sahiyapur
+43346,Karaikal
+100214,Wazirganj Apmc
+43382,Nancowrie
+100230,Falakata
+88806,Bagh
+100246,Kawaradha
+88823,Bishnupur
+100262,Dhand
+88840,Ramban
+100278,Kalanwali
+90017,Srinagar Uttrakhand
+100294,Palwal
+93252,Jajpur
+100310,Sonepat
+99372,Karsingsa
+100326,Dabra
+99388,Jamui
+100342,Krishi Upaj Mandi Samiti-karhi
+99404,Rajnandagaon Kvk
+100358,Shujalpur
+99421,Jagdishpur
+99437,Gumla Bishnupur
+99453,Gonikoppal
+13001,Bokaro
+99469,Aron
+30005,Mathura Vrindavan
+99485,Palghar
+30026,Baidyanath Dham
+99501,Panipolia
+42045,Banihal
+100373,Dound
+99517,Karauli
+42079,Sundernagar
+100390,Baripada
+99535,Agartala Kvk
+42114,Tehri
+100411,Thattanchavady
+99551,Kushinagar Kvk
+42177,Narnaul
+100427,Maur
+99918,Haridwar
+42260,Agra
+100443,Avalurpet
+99935,Ahmedabad-airport
+42339,Jodhpur
+100459,Kuthalam
+99951,Dehradun-karanpur
+42381,Azamgarh
+100476,Rajapalayam
+99970,Lucknow-hanuman Setu
+42435,Barmer
+100492,Vaniyambadi
+99986,Patna-city
+42500,Purnea
+100508,Enkoor
+100005,Hazaribagh
+42591,Gaya
+100524,Mahabubabad
+100021,Barisadri
+42675,Jabalpur
+100540,Tandur
+100037,Chomu F And V
+42748,Baroda
+100556,Jahangirabad
+100053,Gharsana
+42811,Diamond Harbour
+101010,Dikchu
+100069,Khanpur
+42883,Sambalpur
+101026,Parbati St. Ii
+100085,Nawalgarh
+42943,Yeotmal
+101042,Teesta Iii
+100102,Ratangarh
+43009,Ahmednagar
+101059,Chaukori
+100118,Sumerganj
+43067,Pune-pashan
+101082,Ramgarh
+100134,Bharthana
+43117,Solapur
+43147,Tuni
+100157,Jais
+43201,Gadag
+100173,Mahmudabad
+43278,Chennai-nungambakkam
+100189,Puranpur
+43321,Coimbatore
+100205,Shikohabad
+43360,Madurai
+100221,Nanakmatta
+50013,Holi
+100237,Nakashipara Krishak Bazar
+88814,Kasauli
+100253,Vadali Apmc
+88831,Lansdowne
+100269,Indri
+90004,Bhatwari
+100285,Mohindergarh Apmc
+90060,Munnar
+100301,Rania
+99363,Venkataramannagudem
+100317,Parimpora Sgr
+99379,Dudhnoi
+100333,Katni
+99395,Sitamarhi Kvk
+100349,Krishi Upaj Mandi Samiti-udaipura
+99412,Jamnagar
+100365,Ausa
+99428,Kathua
+99444,Ramgarh Kvk
+99460,Kottarakkara
+23001,Bhabanipatna
+99476,Piparsama
+30013,Orchha
+99492,Mokokchung Kvk
+40001,Barpeta
+99508,Budh Singh Wala
+42062,Dharamshala
+100380,Nandurbar
+99526,Sandhiyur
+42099,Ludhiana
+100401,Kuchinda
+99542,Bhadohi
+42139,Meerut
+100418,Fathegarh Sahib
+99558,Ratua
+42189,Bareilly
+100434,Sangrur
+99926,Gautam Budhnagar
+42293,Darjeeling
+100450,Gingee
+99942,Mumbai-powai
+42364,Etawah
+100467,Oddanchatram
+99958,Ahmedabad-pirana
+42399,Jalpaiguri
+100483,Thirukovilur
+99977,Bhopal-airport
+42463,Jhansi
+100499,Virudhunagar
+99995,Hunza
+42540,Mount Abu
+100515,Husnabad
+100012,Apmc Chincholi
+42634,Bhuj
+100531,Narsampet
+100028,Bhawani Mandi
+42711,Krishnanagar
+100547,Jalna
+100044,Dei
+42782,Bilaspur
+101001,Baira Siul
+100060,Jaitsar
+42855,Khandwa
+101017,Kutehr
+100076,M. Kishangarh
+42914,Diu
+101033,Sewa-ii
+100092,Palsana
+42966,Pulbani
+101049,Asan Bird Sanctuary
+100109,Sardar Shahar
+43041,Jagdalpur
+101071,Hemkund Sahib
+100125,Ajuha
+43087,Hanamkonda
+100141,Chandausi
+43176,Amaravati-ap
+100164,Karwi Apmc
+43233,Chitradurga
+100180,Najibabad Apmc
+43295,Bengaluru-city
+100196,Sadabad Apmc
+43340,Yercaud
+100212,Unnao Apmc
+43376,Palayankottai
+100228,Bishnupur
+88804,Kotli
+100244,Bhatapara
+88821,Gokarna
+100260,Chhachhrauli
+88838,Sheshnag
+100276,Julana
+90015,Rudraprayag
+100292,Nuh Apmc
+90146,Salwan Public School
+100308,Shahzadpur Apmc
+99370,Utkuru
+100324,Burhanpur
+99386,Agriculture University
+100340,Krishi Upaj Mandi Samiti-bhikangaon
+99402,Mahasamund
+100356,Shajapur
+99419,Kurukshetra Kvk
+99435,Giridih Bengabad
+99451,Mudigere
+10002,Bhadrak (ranital)
+99467,Nowgong
+30003,Diskit Nubra
+99483,Nandurbar Kvk
+30024,Pelling
+99499,Jagatsinghpur Kvk
+42043,Batote
+100371,Digras
+99515,Jaisalmer Kvk
+42076,Kangra
+100387,Bahadajhola
+99533,Malyal
+42111,Dehradun-mokhampur
+100409,Tikabali
+99549,Jaunpur Kvk
+42174,Pilani
+100425,Malout Apmc
+99916,Sirsa
+42258,Bharatpur
+100441,Anthiyur
+99933,Hyderabad-hakimpet
+42317,Tinsukia
+100457,Kancheepuram
+99949,Bhubneshwar-ouat
+42377,Sultanpur
+100474,Pollachi
+99968,Jaipur-collectorate Circle
+42420,Golaghat
+100490,Usilampatti
+99984,Panjim-mapusa
+42492,Patna-airport
+100506,Devarakonda
+100003,Garhwa
+42574,Rewa
+100522,Kesamudram
+100019,Bandikui
+42667,Bhopal-arera Hills
+100538,Siddipet
+100035,Chirawa
+42737,Rajkot
+100554,Ayodhya
+100051,Gangapur City
+42807,Kolkata-alipore
+101008,Chutak
+100067,Khairthal
+42881,Dhenkanal
+101024,Nimoo Bazgo
+100083,Nadbai
+42937,Amravati
+101040,Tapovan Vishnugad
+100100,Rani
+43001,Dahanu
+101056,Binsar
+100116,Srikaranpur
+43063,Pune-shivajinagar
+101080,Piran Kaliyar Sharif Dargah
+100132,Bangarmau
+43111,Mahabaleshwar
+100148,Farrukhabad
+100155,Hasanpur Apmc
+43198,Belagavi
+100171,Lalitpur
+43266,Agati
+100187,Pratapgarh
+43315,Kannur
+100203,Shahbad Hardoi
+43354,Punalur
+100219,Kashipur
+50011,Chaurasi Temple Bharmour
+100235,Karimpur Submarket Yard
+88811,Ramanathapuram
+100251,Rajim
+88828,Lunglei
+100267,Gohana
+90001,Augustmuni
+100283,Madlauda
+90029,Sangam
+100299,Punhana Apmc
+93261,Kendrapara
+100315,Yamuna Nagar Apmc
+99377,Mangaldoi
+100331,Itarsi
+99393,Purnea Kvk
+100347,Krishi Upaj Mandi Samiti-saunsar
+99410,Dahod
+100363,Amalner
+99426,Sirmour Dhulakuan
+99442,Pakur Kvk
+99458,Konehalli
+21001,Kohima-dimapur
+99474,Rewa Kvk
+30011,Wayanand
+99490,Nongstoin
+31003,Magarpatta
+99506,Firozpur Kvk
+42057,Pathankot
+100378,Mangrulpeer
+99524,Vamban
+42096,Ferozepore
+100396,Gunupur
+99540,Baghpat
+42137,Karnal
+100416,Budhlada Apmc
+99556,Santiniketan Bolpur
+42184,New Delhi-ridge
+100432,Rampura Phul
+99923,New Delhi-lodi Road
+42271,Hardoi
+100448,Dindigul
+99940,Navi Mumbai (panvel)
+42354,Dholpur
+100465,Mudhukalathur
+99956,Ahmedabad-ambli-bopal
+42395,Farbesganj
+100481,Sirkali
+99975,Srinagar-airport
+42453,Sawai Madhopur
+100497,Villupuram
+99993,Kharmang
+42527,Kohima
+100513,Gollapally
+100010,Sahebganj
+42623,Imphal
+100529,Nakrekal
+100026,Begu
+42708,Sriniketan
+100545,Wanaparthy Town
+100042,Deeg
+42776,Mandla
+100561,Saharanpur
+100058,Itawa
+42840,Surat
+101015,Kiru
+100074,Lalsot
+42901,Digha
+101031,Sanjay (bhaba)
+100090,Nokha
+42963,Bolangir
+101047,Vyasi
+100107,Sanchore
+43025,Adilabad
+101065,Gangotri
+100123,Achhalda Apmc
+43083,Medak
+101088,Yamunotri
+100139,Bulandshahar
+43136,Bhadrachalam
+43168,Mahabubnagar
+100162,Kaimganj
+43225,Karwar
+100178,Muskera
+43291,Mysuru
+100194,Rath
+43337,Kavarati
+100210,Tundla
+43371,Thiruvananthapuram-city
+100226,Bagda Krishak Bazar
+88802,Nagar
+100242,Simlapal
+88819,Junagarh
+100258,Ch Dadri
+88836,Panjtarni
+100274,Jhajjar
+90013,Nainbagh
+100290,Nigdhu Apmc
+90144,Najafgarh
+100306,Samalkha
+99368,Darsi
+100322,Biaora
+99384,Banka
+100338,Krishi Upaj Mandi Samiti-badwaha
+99400,Lakhanpur
+100354,Ratlam
+99417,Gurgaon Kvk
+99433,Sujani
+99449,Hagari
+8205,Chamba
+99465,Pala
+26005,Soreng
+99481,Gadchiroli Kvk
+30021,Kumbalgarh
+99497,Gajapati1
+42031,Kupwara
+100369,Chikhali
+99513,Dungarpur Kvk
+42074,Kapurthala
+100385,Yeola
+99531,Adilabad Kvk
+42106,Solan
+100407,Paralakhemundi
+99547,Ghazipur
+42165,Bikaner
+100423,Khanna Apmc
+99912,Almora
+42249,Siker
+100439,Anaimalai
+99931,Hyderabad-rajinder Nagar
+42311,Sibsagar
+100455,Kallakurichi
+99947,Chennai-madhavaram
+42372,Fursatganj
+100472,Perundurai
+99966,Jaipur-vaishali Nagar
+42413,Mazbat
+100488,Udumalpet
+99982,Nagpur-college Of Agriculture
+42483,Varanasi Bhu
+100504,Choppadandi
+100001,Chakulia
+42567,Khajuraho
+100520,Kamareddy
+100017,Bajju
+42655,Banswada
+100536,Shadnagar
+100033,Chabra
+42730,Okha
+100552,Negamam
+100049,Fatehpur
+42803,Midnapore
+101006,Chanju-i
+100065,Keshoraipatan
+42874,Raipur-lalpur
+101022,Naitwar Mori
+100081,Mandawari
+42933,Akola City
+101038,Sorang
+100098,Rajdhani Mandi Kukarkhera
+42973,Chandbali
+101054,Bhimtal
+100114,Sri Vijaynagar
+43057,Mumbai-colaba
+101076,Khirsu
+100130,Badaun
+43109,Harnai
+100146,Deoria

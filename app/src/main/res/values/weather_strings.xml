@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weather_title_hindi">NASA POWER क्वेरी / मौसम डेटा</string>
+    <string name="weather_title_english">NASA POWER Query — Weather for Yield</string>
+    <string name="open_nasa_weather">NASA Weather / Analytics</string>
+    <string name="weather_form_section_query">API query parameters</string>
+    <string name="weather_hint_start">Start date (YYYYMMDD)</string>
+    <string name="weather_hint_end">End date (YYYYMMDD)</string>
+    <string name="weather_hint_latitude">Latitude</string>
+    <string name="weather_hint_longitude">Longitude</string>
+    <string name="weather_hint_community">Community (SB / AG / RE)</string>
+    <string name="weather_hint_parameters">Parameters (comma-separated, e.g. T2M)</string>
+    <string name="weather_hint_format">Format</string>
+    <string name="weather_hint_units">Units</string>
+    <string name="weather_hint_user">User (optional)</string>
+    <string name="weather_hint_header">Header (true / false)</string>
+    <string name="weather_hint_time_standard">Time standard (UTC / LST)</string>
+    <string name="weather_hint_site_elevation">Site elevation (m)</string>
+    <string name="weather_hint_wind_elevation">Wind elevation (m)</string>
+    <string name="weather_hint_wind_surface">Wind surface</string>
+    <string name="weather_fetch_btn">Fetch NASA Data</string>
+    <string name="weather_fetch_30_year_btn">Download 30-Year Monthly CSV</string>
+    <string name="weather_csv_download_success">Weather CSV downloaded successfully to %1$s</string>
+    <string name="weather_monthly_csv_download_success">30-year monthly CSV downloaded successfully to %1$s</string>
+    <string name="weather_retry">Retry</string>
+    <string name="weather_continue">Continue to Calculate</string>
+    <string name="weather_not_ready">Fetch NASA data before continuing.</string>
+    <string name="weather_fetch_error">Failed to load weather: %1$s</string>
+    <string name="weather_error_lat_lon">Enter valid latitude and longitude.</string>
+    <string name="weather_error_elevation">Enter valid site and wind elevation values.</string>
+    <string name="weather_error_ml_url">ML endpoint is not configured.</string>
+    <string name="weather_error_no_internet">No internet connection. NASA POWER needs public internet (power.larc.nasa.gov). Enable Wi‑Fi or mobile data on the device/emulator, then tap Retry.</string>
+    <string name="weather_standalone_title">Weather-Enhanced Yield (Standalone)</string>
+    <string name="weather_standalone_subtitle">NASA POWER → ML API</string>
+    <string name="weather_flow_label">Calculation flow</string>
+    <string name="weather_proceed">Proceed</string>
+    <string name="weather_source_label">मौसम स्रोत / Weather source</string>
+    <string name="weather_source_nasa">NASA POWER</string>
+    <string name="weather_source_imd">IMD</string>
+    <string name="weather_source_hint_nasa">Uses nearest farm 30-year crop-season climate from the NASA POWER weekly CSV. No internet needed.</string>
+    <string name="weather_source_hint_imd">Uses nearest district 30-year climate from the IMD 365-day climatology CSV (Tmax/Tmin/rainfall, 1995–2025). No internet needed.</string>
+    <string name="weather_source_note_nasa">Source: NASA POWER daily %1$s</string>
+    <string name="weather_source_note_nasa_climate">Source: NASA POWER weekly climate CSV · nearest farm %1$s km</string>
+</resources>

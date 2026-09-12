@@ -1,0 +1,145 @@
+column,data_type,description,source
+record_id,Integer,"Unique farm record identifier (1-based, from source row after header skip)",Derived
+Longitude,Decimal degrees,Farm longitude (WGS84),RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Latitude,Decimal degrees,Farm latitude (WGS84),RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Crop Sowing Time,Date (YYYY-MM-DD),Crop sowing date,RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Crop Harvesting Time,Date (YYYY-MM-DD),Crop harvesting date,RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Yield Level (t/ha),t/ha,Observed rice yield,RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+season_days,Days,Harvest date minus sowing date,Derived
+total_mon_fri_weeks,Count,Number of Mon-Fri weeks in growing season for this record,Derived
+pH (1:2),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+EC (dS/m),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+OC %,Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Major-nutrient Avail N. (Kg/ha),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Major-nutrient P(kg/ha),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Major-nutrient Avail. K (kg/ha),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Major-nutrient Sulphur (kg/ha),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Micro-nutrientZn (ppm),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Micro-nutrient Fe (ppm),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Micro-nutrient Mn (ppm),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Micro-nutrient Cu (ppm),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Actual Residue Incorporation,Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+N (kg/ha),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+P2o5 from DAP,Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+K2o5 from MOP,Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Zinc Sul,Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+FYM (in t/ha),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+FYM input interval (Yr),Numeric/Text,"Soil, nutrient, or management field from rice dataset",RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Crop Sowing Time_1,Day of year,Sowing day-of-year (Julian),RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+Crop Harvesting Time_1,Day of year,Harvest day-of-year (Julian),RICE_UP_BI_PU_HR_USED_FINAL.xlsx
+week01_rainfall_total_week_mm,Float,Week 1 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 1 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week01_rainfall_weekly_mean_mm_day,Float,Week 1 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 1 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week01_relative_humidity_weekly_mean_pct,Float,Week 1 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 1 weeks.,"NASA POWER (RH2M, mean)"
+week01_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 1 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 1 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week02_rainfall_total_week_mm,Float,Week 2 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 2 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week02_rainfall_weekly_mean_mm_day,Float,Week 2 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 2 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week02_relative_humidity_weekly_mean_pct,Float,Week 2 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 2 weeks.,"NASA POWER (RH2M, mean)"
+week02_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 2 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 2 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week03_rainfall_total_week_mm,Float,Week 3 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 3 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week03_rainfall_weekly_mean_mm_day,Float,Week 3 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 3 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week03_relative_humidity_weekly_mean_pct,Float,Week 3 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 3 weeks.,"NASA POWER (RH2M, mean)"
+week03_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 3 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 3 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week04_rainfall_total_week_mm,Float,Week 4 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 4 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week04_rainfall_weekly_mean_mm_day,Float,Week 4 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 4 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week04_relative_humidity_weekly_mean_pct,Float,Week 4 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 4 weeks.,"NASA POWER (RH2M, mean)"
+week04_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 4 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 4 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week05_rainfall_total_week_mm,Float,Week 5 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 5 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week05_rainfall_weekly_mean_mm_day,Float,Week 5 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 5 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week05_relative_humidity_weekly_mean_pct,Float,Week 5 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 5 weeks.,"NASA POWER (RH2M, mean)"
+week05_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 5 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 5 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week06_rainfall_total_week_mm,Float,Week 6 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 6 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week06_rainfall_weekly_mean_mm_day,Float,Week 6 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 6 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week06_relative_humidity_weekly_mean_pct,Float,Week 6 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 6 weeks.,"NASA POWER (RH2M, mean)"
+week06_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 6 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 6 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week07_rainfall_total_week_mm,Float,Week 7 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 7 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week07_rainfall_weekly_mean_mm_day,Float,Week 7 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 7 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week07_relative_humidity_weekly_mean_pct,Float,Week 7 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 7 weeks.,"NASA POWER (RH2M, mean)"
+week07_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 7 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 7 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week08_rainfall_total_week_mm,Float,Week 8 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 8 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week08_rainfall_weekly_mean_mm_day,Float,Week 8 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 8 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week08_relative_humidity_weekly_mean_pct,Float,Week 8 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 8 weeks.,"NASA POWER (RH2M, mean)"
+week08_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 8 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 8 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week09_rainfall_total_week_mm,Float,Week 9 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 9 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week09_rainfall_weekly_mean_mm_day,Float,Week 9 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 9 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week09_relative_humidity_weekly_mean_pct,Float,Week 9 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 9 weeks.,"NASA POWER (RH2M, mean)"
+week09_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 9 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 9 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week10_rainfall_total_week_mm,Float,Week 10 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 10 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week10_rainfall_weekly_mean_mm_day,Float,Week 10 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 10 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week10_relative_humidity_weekly_mean_pct,Float,Week 10 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 10 weeks.,"NASA POWER (RH2M, mean)"
+week10_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 10 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 10 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week11_rainfall_total_week_mm,Float,Week 11 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 11 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week11_rainfall_weekly_mean_mm_day,Float,Week 11 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 11 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week11_relative_humidity_weekly_mean_pct,Float,Week 11 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 11 weeks.,"NASA POWER (RH2M, mean)"
+week11_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 11 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 11 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week12_rainfall_total_week_mm,Float,Week 12 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 12 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week12_rainfall_weekly_mean_mm_day,Float,Week 12 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 12 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week12_relative_humidity_weekly_mean_pct,Float,Week 12 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 12 weeks.,"NASA POWER (RH2M, mean)"
+week12_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 12 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 12 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week13_rainfall_total_week_mm,Float,Week 13 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 13 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week13_rainfall_weekly_mean_mm_day,Float,Week 13 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 13 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week13_relative_humidity_weekly_mean_pct,Float,Week 13 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 13 weeks.,"NASA POWER (RH2M, mean)"
+week13_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 13 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 13 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week14_rainfall_total_week_mm,Float,Week 14 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 14 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week14_rainfall_weekly_mean_mm_day,Float,Week 14 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 14 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week14_relative_humidity_weekly_mean_pct,Float,Week 14 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 14 weeks.,"NASA POWER (RH2M, mean)"
+week14_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 14 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 14 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week15_rainfall_total_week_mm,Float,Week 15 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 15 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week15_rainfall_weekly_mean_mm_day,Float,Week 15 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 15 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week15_relative_humidity_weekly_mean_pct,Float,Week 15 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 15 weeks.,"NASA POWER (RH2M, mean)"
+week15_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 15 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 15 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week16_rainfall_total_week_mm,Float,Week 16 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 16 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week16_rainfall_weekly_mean_mm_day,Float,Week 16 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 16 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week16_relative_humidity_weekly_mean_pct,Float,Week 16 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 16 weeks.,"NASA POWER (RH2M, mean)"
+week16_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 16 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 16 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week17_rainfall_total_week_mm,Float,Week 17 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 17 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week17_rainfall_weekly_mean_mm_day,Float,Week 17 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 17 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week17_relative_humidity_weekly_mean_pct,Float,Week 17 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 17 weeks.,"NASA POWER (RH2M, mean)"
+week17_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 17 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 17 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week18_rainfall_total_week_mm,Float,Week 18 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 18 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week18_rainfall_weekly_mean_mm_day,Float,Week 18 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 18 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week18_relative_humidity_weekly_mean_pct,Float,Week 18 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 18 weeks.,"NASA POWER (RH2M, mean)"
+week18_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 18 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 18 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week19_rainfall_total_week_mm,Float,Week 19 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 19 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week19_rainfall_weekly_mean_mm_day,Float,Week 19 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 19 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week19_relative_humidity_weekly_mean_pct,Float,Week 19 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 19 weeks.,"NASA POWER (RH2M, mean)"
+week19_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 19 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 19 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week20_rainfall_total_week_mm,Float,Week 20 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 20 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week20_rainfall_weekly_mean_mm_day,Float,Week 20 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 20 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week20_relative_humidity_weekly_mean_pct,Float,Week 20 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 20 weeks.,"NASA POWER (RH2M, mean)"
+week20_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 20 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 20 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week21_rainfall_total_week_mm,Float,Week 21 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 21 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week21_rainfall_weekly_mean_mm_day,Float,Week 21 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 21 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week21_relative_humidity_weekly_mean_pct,Float,Week 21 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 21 weeks.,"NASA POWER (RH2M, mean)"
+week21_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 21 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 21 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week22_rainfall_total_week_mm,Float,Week 22 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 22 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week22_rainfall_weekly_mean_mm_day,Float,Week 22 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 22 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week22_relative_humidity_weekly_mean_pct,Float,Week 22 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 22 weeks.,"NASA POWER (RH2M, mean)"
+week22_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 22 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 22 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week23_rainfall_total_week_mm,Float,Week 23 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 23 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week23_rainfall_weekly_mean_mm_day,Float,Week 23 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 23 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week23_relative_humidity_weekly_mean_pct,Float,Week 23 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 23 weeks.,"NASA POWER (RH2M, mean)"
+week23_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 23 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 23 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week24_rainfall_total_week_mm,Float,Week 24 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 24 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week24_rainfall_weekly_mean_mm_day,Float,Week 24 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 24 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week24_relative_humidity_weekly_mean_pct,Float,Week 24 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 24 weeks.,"NASA POWER (RH2M, mean)"
+week24_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 24 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 24 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week25_rainfall_total_week_mm,Float,Week 25 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 25 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week25_rainfall_weekly_mean_mm_day,Float,Week 25 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 25 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week25_relative_humidity_weekly_mean_pct,Float,Week 25 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 25 weeks.,"NASA POWER (RH2M, mean)"
+week25_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 25 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 25 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week26_rainfall_total_week_mm,Float,Week 26 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 26 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week26_rainfall_weekly_mean_mm_day,Float,Week 26 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 26 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week26_relative_humidity_weekly_mean_pct,Float,Week 26 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 26 weeks.,"NASA POWER (RH2M, mean)"
+week26_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 26 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 26 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week27_rainfall_total_week_mm,Float,Week 27 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 27 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week27_rainfall_weekly_mean_mm_day,Float,Week 27 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 27 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week27_relative_humidity_weekly_mean_pct,Float,Week 27 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 27 weeks.,"NASA POWER (RH2M, mean)"
+week27_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 27 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 27 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week28_rainfall_total_week_mm,Float,Week 28 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 28 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week28_rainfall_weekly_mean_mm_day,Float,Week 28 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 28 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week28_relative_humidity_weekly_mean_pct,Float,Week 28 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 28 weeks.,"NASA POWER (RH2M, mean)"
+week28_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 28 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 28 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"
+week29_rainfall_total_week_mm,Float,Week 29 of growing season: Total rainfall Mon-Fri (mm). Blank if season has fewer than 29 weeks.,"NASA POWER (PRECTOTCORR, sum)"
+week29_rainfall_weekly_mean_mm_day,Float,Week 29 of growing season: Mean daily rainfall Mon-Fri (mm/day). Blank if season has fewer than 29 weeks.,"NASA POWER (PRECTOTCORR, mean)"
+week29_relative_humidity_weekly_mean_pct,Float,Week 29 of growing season: Mean relative humidity Mon-Fri (%). Blank if season has fewer than 29 weeks.,"NASA POWER (RH2M, mean)"
+week29_solar_radiation_weekly_mean_kwh_m2_day,Float,Week 29 of growing season: Mean surface solar radiation Mon-Fri (kWh/m2/day). Blank if season has fewer than 29 weeks.,"NASA POWER (ALLSKY_SFC_SW_DWN, mean)"

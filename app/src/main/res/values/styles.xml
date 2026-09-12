@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.NASF.TextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textColorHint">@color/dark_blue</item>
+        <item name="android:textColorHighlight">@color/dark_blue</item>
+    </style>
+
+    <style name="Widget.NASF.AutoCompleteTextView" parent="Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textColorHint">@color/dark_blue</item>
+    </style>
+</resources>

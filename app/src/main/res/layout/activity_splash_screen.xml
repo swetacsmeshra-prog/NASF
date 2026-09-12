@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logo_1"
+    tools:context=".SplashScreen">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/empty_text1"
+                android:layout_span="2"
+                tools:ignore="SpUsage">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/empty_text1"
+                android:layout_span="2"
+                tools:ignore="SpUsage">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/empty_text1"
+                android:layout_span="2"
+                tools:ignore="SpUsage">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icar"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/logo_size1"
+                android:layout_weight="1"
+                android:src="@drawable/icar_logo"
+                android:contentDescription="@string/icar_logo">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/logo_size1"
+                android:layout_weight="1"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/iari_logo">
+            </ImageView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/empty_text1"
+                android:layout_span="2"
+                tools:ignore="SpUsage">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/empty_text1"
+                android:layout_span="2"
+                tools:ignore="SpUsage">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textSplash"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/Splash_Message"
+                android:textSize="@dimen/splash_text1"
+                android:layout_span="2"
+                tools:ignore="SpUsage"
+                android:textColor="@color/dark_blue">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/empty_text1"
+                android:layout_span="2"
+                tools:ignore="SpUsage">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textSplash1"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/Splash_Message1"
+                android:textSize="@dimen/splash_text2"
+                android:layout_span="2"
+                tools:ignore="SpUsage"
+                android:textColor="@color/dark_blue">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textSplash2"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/Splash_Message2"
+                android:textSize="@dimen/splash_text2"
+                android:layout_span="2"
+                tools:ignore="SpUsage"
+                android:textColor="@color/dark_blue">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textSplash3"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/Splash_Message3"
+                android:textSize="@dimen/splash_text2"
+                android:layout_span="2"
+                tools:ignore="SpUsage"
+                android:textColor="@color/dark_blue">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/empty_text1"
+                android:layout_span="2"
+                tools:ignore="SpUsage">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textSplash4"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/Splash_Message4"
+                android:textSize="@dimen/splash_text2"
+                android:layout_span="2"
+                tools:ignore="SpUsage"
+                android:textColor="@color/dark_blue">
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
